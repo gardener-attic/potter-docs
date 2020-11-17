@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+
+  <head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Project Potter Website"><meta name="copyright" content="Copyright 2020 Potter project authors.">
+  
+  <title>Contribute :: Potter</title>
+  <link rel="icon" type="image/x-icon" href='https://github.com/gardener/potter-docs/images/favicon.ico'>
+  <link rel="icon" type="image/png"    href='https://github.com/gardener/potter-docs/images/favicon-32x32.png' sizes="32x32">
+  <link rel="icon" type="image/png"    href='https://github.com/gardener/potter-docs/images/favicon-16x16.png' sizes="16x16">
+  
+  
+    
+  
+
+  
+  <link href="/gardener/potter-docs/css/nucleus.css?1605626390" rel="stylesheet">
+  <link href="/gardener/potter-docs/css/font-awesome.min.css?1605626390" rel="stylesheet">
+  <link href="/gardener/potter-docs/css/hybrid.css?1605626390" rel="stylesheet">
+  <link href="/gardener/potter-docs/css/featherlight.min.css?1605626390" rel="stylesheet">
+  <link href="/gardener/potter-docs/css/perfect-scrollbar.min.css?1605626390" rel="stylesheet">
+  <link href="/gardener/potter-docs/css/auto-complete.css?1605626390" rel="stylesheet">
+  <link href="/gardener/potter-docs/css/skeleton.css?1605626390" rel="stylesheet">
+  <link href="/gardener/potter-docs/css/sheetslider.css?1605626390" rel="stylesheet">
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/gardener/potter-docs/css/gardener.7593938070d708e7b1bec0e9172492ff8f780d7c20e680f994075d57795a3335.css">
+  
+  <script src="/gardener/potter-docs/js/moment.js?1605626390"></script>
+  <script src="/gardener/potter-docs/js/vivus.js?1605626390"></script>
+  <script src="/gardener/potter-docs/js/scrollreveal.js?1605626390"></script>
+  <script src="/gardener/potter-docs/js/inlineSVG.js?1605626390"></script>
+  <script src="/gardener/potter-docs/js/jquery.min.js?1605626390"></script>
+  <script src="/gardener/potter-docs/js/fixed.js?1605626390"></script>
+  <script src="/gardener/potter-docs/js/clipboard.min.js?1605626390"></script>
+
+  <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+  
+
+</head>
+
+
+  <body data-url="/gardener/potter-docs/contribute/" class="has-sticky-navigation">
+      
+    <script>
+  $(document).ready(function () {
+    function initStickyNav() {
+      var stickyPoint;
+      var tln = document.querySelector(".tln");
+      if (!tln) {
+        return;
+      }
+      var stickyPointEl = document.querySelector(".sticky-nav-point");
+      if (stickyPointEl == null) {
+        stickyPointEl = document.querySelector("body");
+        stickyPoint = 0;
+      } else {
+        stickyPoint = stickyPointEl.clientHeight + stickyPointEl.offsetTop;
+      }
+      var bodySelector = document.getElementsByTagName("body")[0];
+      var tlnHeight = tln.clientHeight;
+      var stickyNavigation = function () {
+        if (window.pageYOffset + tlnHeight >= stickyPoint) {
+          bodySelector.classList.add("has-sticky-navigation");
+          tln.classList.add("sticky-top");
+        } else {
+          bodySelector.classList.remove("has-sticky-navigation");
+          tln.classList.remove("sticky-top");
+        }
+      }
+
+      window.onscroll = function () {
+        stickyNavigation();
+      };
+    }
+    initStickyNav();
+
+    function closeAllSelect() {
+      document.getElementById("docOptions").classList.remove("show");
+    }
+
+    function show(e) {
+      e.stopPropagation();
+      document.getElementById("docOptions").classList.add("show");
+    }
+
+    document.addEventListener("click", closeAllSelect);
+    document.getElementById("docSelector").addEventListener("click", show);
+  });
+
+</script>
+
+<div class="tln fixedsticky sticky-top"><header class="navigation">
+    <div class="container">
+      <div class="navigation-wrapper">
+        <a href="/gardener/potter-docs/" class="logo">
+          <img src="/gardener/potter-docs/images/logo.png" />
+          <span class="title">Potter</span>
+        </a>
+        <a class="nav-button navbar-toggler" href="#"><i class="fa fa-bars"></i></a>
+        
+        <div class="navbar-collapse">
+          <ul class="links">
+            
+            <li class="link active">
+              <a href="/gardener/potter-docs/contribute/">Contribute</a>
+            </li>
+            
+            
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+<script>
+  
+  $(".navigation .navbar-toggler").click(function (evt) {
+    $(".navigation .navbar-collapse").toggle();
+    $(".navigation").toggleClass("collapsed");
+    $(".navigation .search-box").toggle();
+  })
+</script>
+
+
+
+
+
+<style>
+  #docSelector {
+    cursor: pointer;
+  }
+
+  .doc-options {
+    position: fixed;
+    background-color: #0b8062;
+    text-align: left;
+    display: none;
+  }
+
+  .doc-options ul li {
+    margin-bottom: 0;
+  }
+
+  .doc-options ul li a:hover {
+    background-color: #0c694f;
+  }
+
+  .doc-options ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+  }
+
+  .doc-options ul li a {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .doc-options .activeVersion {
+    background-color: #ec682a;
+  }
+
+  .show {
+    display: block;
+  }
+</style>
+    
+    
+    
+    <div class="main container">
+      
+      <section>
+        
+        <div class="highlightable body-inner-wrapper">
+          
+          
+          <div id="body-inner" class="">
+            
+<h2 id="code-of-conduct">Code of conduct</h2>
+<p>All members of the Gardener community must abide by the
+<a href="https://github.com/cncf/foundation/blob/master/code-of-conduct.md">CNCF Code of Conduct</a>.
+Only by respecting each other can we develop a productive, collaborative community.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting <a href="mailto:gardener.opensource@sap.com">gardener.opensource@sap.com</a> and/or a Gardener project maintainer.</p>
+<h2 id="contributing">Contributing</h2>
+<p>Gardener uses GitHub to manage reviews of pull requests.</p>
+<ul>
+<li>
+<p>If you are a new contributor see: <a href="#steps-to-contribute">Steps to Contribute</a></p>
+</li>
+<li>
+<p>If you have a trivial fix or improvement, go ahead and create a pull request,
+addressing (with <code>@...</code>) a suitable maintainer of this repository (see
+<a href="https://github.com/gardener/gardener/blob/master/CODEOWNERS">CODEOWNERS</a> of the
+repository you want to contribute to) in the description of the pull request.</p>
+</li>
+<li>
+<p>If you plan to do something more involved, first discuss your ideas
+on our <a href="https://groups.google.com/forum/?fromgroups#!forum/gardener">mailing list</a>.
+This will avoid unnecessary work and surely give you and us a good deal
+of inspiration.</p>
+</li>
+<li>
+<p>Relevant coding style guidelines are the <a href="https://code.google.com/p/go-wiki/wiki/CodeReviewComments">Go Code Review
+Comments</a>
+and the <em>Formatting and style</em> section of Peter Bourgon&rsquo;s <a href="http://peter.bourgon.org/go-in-production/#formatting-and-style">Go: Best
+Practices for Production
+Environments</a>.</p>
+</li>
+</ul>
+<h2 id="steps-to-contribute">Steps to Contribute</h2>
+<p>Should you wish to work on an issue, please claim it first by commenting on the GitHub issue that you want to work on it. This is to prevent duplicated efforts from contributors on the same issue.</p>
+<p>If you have questions about one of the issues, with or without the tag, please comment on them and one of the maintainers will clarify it.</p>
+<h2 id="individual-contributor-license-agreement">Individual Contributor License Agreement</h2>
+<p>When you contribute (code, documentation, or anything else), be aware that we only accept contributions
+under the Gardener project&rsquo;s license (see previous sections) and you need to agree to the
+<a href="https://gist.github.com/CLAassistant/bd1ea8ec8aa0357414e8">Individual Contributor License Agreement</a>.
+This applies to all contributors, including those contributing on behalf of a company. If you agree to its content, click on the link posted by the CLA assistant as a comment to the pull request. Click it to review the CLA, then accept it on the next screen if you agree to it. CLA assistant will save your decision for upcoming contributions and will notify you if there is any change to the CLA in the meantime.</p>
+<h2 id="corporate-contributor-license-agreement">Corporate Contributor License Agreement</h2>
+<p>If employees of a company contribute code, in <strong>addition</strong> to the individual agreement above, there needs to be one company agreement submitted. This is mainly for the protection of the contributing employees.</p>
+<p>An authorized company representative needs to download, fill, and print
+the <a href="/doc/cla/SAP%20Corporate%20Contributor%20License%20Agreement%20(5-26-15).pdf">Corporate Contributor License Agreement</a> form. Then either:</p>
+<ul>
+<li>Scan it and e-mail it to <a href="mailto:opensource@sap.com">opensource@sap.com</a> and <a href="mailto:gardener.opensource@sap.com">gardener.opensource@sap.com</a></li>
+<li>Fax it to: +49 6227 78-45813</li>
+<li>Send it by letter to: <em>Industry Standards &amp; Open Source Team, Dietmar-Hopp-Allee 16, 69190 Walldorf, Germany</em></li>
+</ul>
+<p>The form contains a list of employees who are authorized to contribute on behalf of your company. When this list changes, please let us know.</p>
+<h2 id="pull-request-checklist">Pull Request Checklist</h2>
+<ul>
+<li>
+<p>Branch from the master branch and, if needed, rebase to the current master branch before submitting your pull request. If it doesn&rsquo;t merge cleanly with master you may be asked to rebase your changes.</p>
+</li>
+<li>
+<p>Commits should be as small as possible, while ensuring that each commit is correct independently (i.e., each commit should compile and pass tests).</p>
+</li>
+<li>
+<p>If your patch is not getting reviewed or you need a specific person to review it, you can @-reply a reviewer asking for a review in the pull request or a comment, or you can ask for a review on our <a href="https://groups.google.com/forum/?fromgroups#!forum/gardener">mailing list</a>.</p>
+</li>
+<li>
+<p>Add tests relevant to the fixed bug or new feature.</p>
+</li>
+</ul>
+<h2 id="issues-and-planning">Issues and Planning</h2>
+<p>We use GitHub issues to track bugs and enhancement requests and ZenHub for planning.</p>
+<ul>
+<li>Install the <a href="https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd">ZenHub Chrome plugin</a></li>
+<li>Login to <a href="https://www.zenhub.com/">ZenHub</a></li>
+<li>Open the <a href="https://app.zenhub.com/workspace/o/gardener/gardener">Gardener ZenHub workspace</a></li>
+</ul>
+<h2 id="security-release-process">Security Release Process</h2>
+<p>See <a href="https://github.com/gardener/documentation/blob/master/security-release-process.md">Security Release Process</a></p>
+
+            
+          </div>
+        </div>
+        
+      </section>
+      
+    </div><style>
+ 
+</style>
+<footer class="footer">
+  <div class="container footer-wrapper">
+    <img src="/gardener/potter-docs/images/lp/logo.png" alt="Logo Gardener" class="logo"/>
+    <ul class="media-wr">
+      <li>
+        <a target="_blank" href="https://kubernetes.slack.com/archives/CB57N0BFG">
+          <img src="/gardener/potter-docs/images/branding/slack-logo-white.svg" class="media-icon"/>
+          <div class="media-text">Slack</div>
+        </a>
+      </li>          
+      <li>
+        <a target="_blank" href="https://github.com/gardener/potter-hub">
+          <img src="/gardener/potter-docs/images/branding/github-mark-logo.png" class="media-icon" />
+          <div class="media-text">GitHub</div>
+        </a>
+      </li>                   
+    </ul>
+    <span class="copyright">Copyright 2020 Potter project authors. Privacy Statement</span>
+  </div>
+</footer>
+    
+    <script src="/gardener/potter-docs/js/perfect-scrollbar.min.js?1605626390"></script>
+    <script src="/gardener/potter-docs/js/perfect-scrollbar.jquery.min.js?1605626390"></script>
+    <script src="/gardener/potter-docs/js/jquery.sticky.js?1605626390"></script>
+    <script src="/gardener/potter-docs/js/featherlight.min.js?1605626390"></script>
+    <script src="/gardener/potter-docs/js/html5shiv-printshiv.min.js?1605626390"></script>
+    <script src="/gardener/potter-docs/js/modernizr.custom.71422.js?1605626390"></script>
+
+    <link href="/gardener/potter-docs/mermaid/mermaid.css?1605626390" type="text/css" rel="stylesheet" />
+    <script src="/gardener/potter-docs/mermaid/mermaid.js?1605626390"></script>
+    <script src="/gardener/potter-docs/js/code-snippets.js?1605626390"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true, htmlLables: true });
+      function createIssue(issueUrl, page, url) {
+          var uri = issueUrl+"?title=Documentation issue on page \""+page+"\"";
+          uri = uri+ "&body=\n\n<- DESCRIBE MISSING OR FAULTY DOCUMENTATION HERE->\n\n---\nPage: ["+ page +"]("+
+          url+ ")\ndon't remove the link to the page. It's required for the processor"
+          var res = encodeURI(uri);
+          res +="&labels=area/documentation"
+          window.open(res,"issue")
+          return false;
+      }
+
+      $(document).ready(function() {
+
+
+        inlineSVG.init();
+
+        $("[data-publishdate]").each(function(){
+          $(this).text(moment($(this, "YYYY-MM-DD", "YYYY-MM-DD hh:mm:ss").attr("data-publishdate")).fromNow());
+        });
+          
+        new ClipboardJS('.clipboard-copy');
+
+        $("body").codeSnippets();
+      });
+    </script>
+
+    
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    
+  </body>
+</html>
