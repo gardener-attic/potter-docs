@@ -1,13 +1,13 @@
 [
 {
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.1.0/home/",
+	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.2.0/home/",
 	"title": "Home",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.2.0/home/",
+	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.3.0/home/",
 	"title": "Home",
 	"tags": [],
 	"description": "",
@@ -28,14 +28,14 @@
 	"content": "Code of conduct All members of the Gardener community must abide by the CNCF Code of Conduct. Only by respecting each other can we develop a productive, collaborative community. Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting gardener.opensource@sap.com and/or a Gardener project maintainer.\nContributing Gardener uses GitHub to manage reviews of pull requests.\n  If you are a new contributor see: Steps to Contribute\n  If you have a trivial fix or improvement, go ahead and create a pull request, addressing (with @...) a suitable maintainer of this repository (see CODEOWNERS of the repository you want to contribute to) in the description of the pull request.\n  If you plan to do something more involved, first discuss your ideas on our mailing list. This will avoid unnecessary work and surely give you and us a good deal of inspiration.\n  Relevant coding style guidelines are the Go Code Review Comments and the Formatting and style section of Peter Bourgon\u0026rsquo;s Go: Best Practices for Production Environments.\n  Steps to Contribute Should you wish to work on an issue, please claim it first by commenting on the GitHub issue that you want to work on it. This is to prevent duplicated efforts from contributors on the same issue.\nIf you have questions about one of the issues, with or without the tag, please comment on them and one of the maintainers will clarify it.\nIndividual Contributor License Agreement When you contribute (code, documentation, or anything else), be aware that we only accept contributions under the Gardener project\u0026rsquo;s license (see previous sections) and you need to agree to the Individual Contributor License Agreement. This applies to all contributors, including those contributing on behalf of a company. If you agree to its content, click on the link posted by the CLA assistant as a comment to the pull request. Click it to review the CLA, then accept it on the next screen if you agree to it. CLA assistant will save your decision for upcoming contributions and will notify you if there is any change to the CLA in the meantime.\nCorporate Contributor License Agreement If employees of a company contribute code, in addition to the individual agreement above, there needs to be one company agreement submitted. This is mainly for the protection of the contributing employees.\nAn authorized company representative needs to download, fill, and print the Corporate Contributor License Agreement form. Then either:\n Scan it and e-mail it to opensource@sap.com and gardener.opensource@sap.com Fax it to: +49 6227 78-45813 Send it by letter to: Industry Standards \u0026amp; Open Source Team, Dietmar-Hopp-Allee 16, 69190 Walldorf, Germany  The form contains a list of employees who are authorized to contribute on behalf of your company. When this list changes, please let us know.\nPull Request Checklist   Branch from the master branch and, if needed, rebase to the current master branch before submitting your pull request. If it doesn\u0026rsquo;t merge cleanly with master you may be asked to rebase your changes.\n  Commits should be as small as possible, while ensuring that each commit is correct independently (i.e., each commit should compile and pass tests).\n  If your patch is not getting reviewed or you need a specific person to review it, you can @-reply a reviewer asking for a review in the pull request or a comment, or you can ask for a review on our mailing list.\n  Add tests relevant to the fixed bug or new feature.\n  Issues and Planning We use GitHub issues to track bugs and enhancement requests and ZenHub for planning.\n Install the ZenHub Chrome plugin Login to ZenHub Open the Gardener ZenHub workspace  Security Release Process See Security Release Process\n"
 },
 {
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.1.0/docs/",
+	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.2.0/docs/",
 	"title": "Docs",
 	"tags": [],
 	"description": "",
 	"content": "Welcome to the K8s Applications and Services Hub! Here, you can find everything you always wanted to know about the K8s Applications and Services Hub (or just \u0026lsquo;AppHub\u0026rsquo;). As a first time visitor, you might want to first go through this document to get an overview over the K8s Applications and Services Hub. If you are looking for something specific, please see the navigation on the left hand side.\n For information about Cluster-BoMs, visit the Controller Docs.\n What Is the K8s Applications and Services Hub? The K8s Applications and Services Hub, shortly Application Hub, is a Kubernetes extension from SAP to deploy and manage deployments in Kubernetes clusters. It’s a central component in a Kubernetes landscape and doesn’t require any additional components running in the target shoot cluster. Target groups are primarily SAP teams who want to deploy Kubernetes workload in a Gardener-managed cluster.\nBenefits of using the K8s Applications and Services Hub  Possibility to have one single YAML file describing the full set of K8s Deployments for a cluster instead of using individual Command Scripts for each K8s Deployment and also managing those deployments individually. Simply create a \u0026ldquo;Bill-of-Material\u0026rdquo; containing multiple k8s deployments using different deployment technologies like Helm, kapp or plain yaml (planned) Establish a declarative approach for K8s deployments (using Cluster-BoMs) as the standard for SAPs K8s Workloads to eliminate the need of creating specific deployment scripts to deploy K8s workload to Clusters, which quickly becomes unmanageable, especially in private cloud scenarios No need to deal with Helm or kapp (as well as other k8s deployment technologies) in detail. Instead, let the AppHub be responsible for handling these deployment technology details Possibility to retrieve and use one single status (the Cluster-BoM Status), representing the overall state of all deployments in a cluster, instead of trying to compute the overall cluster deployment state on your own Dependency-Management between Cluster Deployments (planned), where for example the sequence of K8s deployments can be specified, even between different K8s deployment technologies like Helm, kapp or plain YAML files Import/Export Management between deployments (planned), where specific data created during deployment of component A is needed during deployment of Component B Cluster-BoMs represent the single source of truth of what is actually running on a specific cluster, making it possible to provide deployment statistics across Gardener Projects (\u0026ldquo;What exactly runs on SAP-managed Clusters ?\u0026quot;)  Architecture Overview What can be deployed? Supported Kubernetes deployments are currently based on Helm charts and kapp applications, but other types will be supported in future.\nTo trigger deployments, two approaches are available:\n Manual deployments using the UI Automated deployments using Cluster-BoMs (see the Controller Docs).  The Helm charts are located in dedicated Helm chart repositories. These repos must be connected to a potter-hub installation according to the installation guide.\nContacts If you have any questions about the AppHub, please don\u0026rsquo;t hesitate to contact us via the following channels (in preferred order):\n AppHub Slack Channel Team DL  Requirements Handling If you have a requirement towards the AppHub, please get in contact with the Product Owner Ingo Kober.\n"
 },
 {
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.2.0/docs/",
+	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.3.0/docs/",
 	"title": "Docs",
 	"tags": [],
 	"description": "",
@@ -56,14 +56,14 @@
 	"content": ""
 },
 {
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.1.0/",
+	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.2.0/",
 	"title": "Home",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.2.0/",
+	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.3.0/",
 	"title": "Home",
 	"tags": [],
 	"description": "",
@@ -91,14 +91,14 @@
 	"content": ""
 },
 {
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.1.0/docs/ui/",
+	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.2.0/docs/ui/",
 	"title": "User Interface",
 	"tags": [],
 	"description": "",
 	"content": "The AppHub UI can be opened in two different modes, with or without a specific target cluster in the URL.\nUsing the AppHub UI with a target cluster To manually deploy Helm charts into a cluster, the Application Hub provides a Hub UI. To access it on the Gardener Dashboard, choose [YOUR-PROJECT] \u0026gt; CLUSTERS \u0026gt; External Tools \u0026gt; K8s Applications and Service Hub*.\nThe UI is divided into three main sections called Applications, Cluster BoMs, and Catalog:\n  The Applications section displays the deployments that are currently available in the Cluster. Note that this view depends on the Namespace selection, which is located in the top-right corner of the UI. The default selection is All Namespaces. Deployments that are managed via Cluster BoMs are marked with a special orange badge. By clicking on this badge, it is possible to directly jump to the corresponding Cluster BoM in the UI.\n  The Cluster BoMs section displays the list of all Cluster BoMs that currently exist for the selected cluster. By clicking on a single Cluster BoM in the list, the Cluster BoM details view is opening. In this view, the detailed state of the Cluster BoM is displayed and upgraded live via WebSockets. Users can also manually trigger a reconcile or download the Cluster BoM YAML via the UI.\n  The Catalog view displays all Helm charts of all Repositories connected to the Application Hub in a landscape. To deploy a Helm chart, choose the respective card within the catalog, and then Deploy in the upper-right corner. A view is displayed, showing the values that are passed to the Helm chart during deployment. The values can be edited in this view. After clicking Submit, the Helm deployment starts. The Status View displays the current state of the deployment.\n  Note that deployments triggered in the UI are directly deployed to the Cluster, and therefore aren’t handled using Cluster-BoMs or added to an existing Cluster-BoM. This behaviour will change in the very near future.\nUsing the AppHub UI without a target cluster If you open the AppHub UI without a target cluster in the URL, it only shows the Hub Catalog. This allows you to browse all Helm charts of all repositories connected to the Application Hub, without being in the context of a target cluster. In this mode, you cannot perform any actions that depend on a target cluster, like deploying/updating/deleting applications. The Hub Catalog can be accessed via \u0026lt;hub-base-url\u0026gt;/#/catalog.\n"
 },
 {
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.2.0/docs/ui/",
+	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.3.0/docs/ui/",
 	"title": "User Interface",
 	"tags": [],
 	"description": "",
