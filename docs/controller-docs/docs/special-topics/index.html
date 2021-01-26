@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Project Potter Website"><meta name="copyright" content="Copyright 2020 Potter project authors.">
   
-  <title>Categories :: Potter</title>
+  <title>Special Topics :: Potter</title>
   <link rel="icon" type="image/x-icon" href='https://gardener.github.io/potter-docs/images/favicon.ico'>
   <link rel="icon" type="image/png"    href='https://gardener.github.io/potter-docs/images/favicon-32x32.png' sizes="32x32">
   <link rel="icon" type="image/png"    href='https://gardener.github.io/potter-docs/images/favicon-16x16.png' sizes="16x16">
@@ -44,7 +44,7 @@
 </head>
 
 
-  <body data-url="/potter-docs/categories/" class="has-sticky-navigation">
+  <body data-url="/potter-docs/controller-docs/docs/special-topics/" class="has-sticky-navigation">
       
     <script>
   $(document).ready(function () {
@@ -110,11 +110,9 @@
               <a href="/potter-docs/contribute/">Contribute</a>
             </li>
             
-            
-            
-            <li class="link has-child">
-              <a href="/potter-docs/controller-docs/home">Controller Docs</a>
+            <li class="link has-child active"><a href="/potter-docs/controller-docs/docs/special-topics/">Controller Docs 0.0.0</a>
             </li>
+            
             
             
           </ul>
@@ -178,9 +176,71 @@
 </style>
     
     
+  
+<div class="sln">
+    <div class="overlay-band">
+        <ul class="nav-list container">
+            
+            <li title="Home"><a class="navbar-link" href="/potter-docs/controller-docs/home/">Home</a>
+            </li>
+            
+            <li title="Docs"><a class="navbar-link is-active" href="/potter-docs/controller-docs/docs/">Docs</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
     
     <div class="main container">
       
+  <nav id="sidebar" class="collapsed container menu">
+
+    <div class="highlightable">
+        <ul class="topics"><li data-nav-id="/potter-docs/controller-docs/docs/" title="Docs" class="dd-item parent root  collapsible" data-depth="0">
+        <a href="/potter-docs/controller-docs/docs/"><span class="menu-item-text">Docs</span>
+        </a><ul><li data-nav-id="/potter-docs/controller-docs/docs/helm-example/" title="Cluster-BoM Example with Helm Applications" class="dd-item top-level" data-depth="1">
+        <a href="/potter-docs/controller-docs/docs/helm-example/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Example with Helm Applications</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/kapp-example/" title="Cluster-BoM Example with kapp Applications" class="dd-item top-level" data-depth="1">
+        <a href="/potter-docs/controller-docs/docs/kapp-example/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Example with kapp Applications</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/plain-yaml-example/" title="Cluster-BoM Example with plain yaml K8s resources" class="dd-item top-level" data-depth="1">
+        <a href="/potter-docs/controller-docs/docs/plain-yaml-example/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Example with plain yaml K8s resources</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/status/" title="Cluster-BoM Status Section explained" class="dd-item top-level" data-depth="1">
+        <a href="/potter-docs/controller-docs/docs/status/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Status Section explained</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/" title="Special Topics" class="dd-item parent active top-level collapsible" data-depth="1">
+        <a href="/potter-docs/controller-docs/docs/special-topics/">
+            <span class="toggle fa fa-angle-down"></span><span class="menu-item-text">Special Topics</span>
+        </a><ul><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/fetching-resources-from-private-github-repo/" title="Fetching Resources From a private GitHub Repository" class="dd-item" data-depth="2">
+        <a href="/potter-docs/controller-docs/docs/special-topics/fetching-resources-from-private-github-repo/"><span class="toggle"></span><span class="menu-item-text">Fetching Resources From a private GitHub Repository</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/gitops/" title="GitOps" class="dd-item" data-depth="2">
+        <a href="/potter-docs/controller-docs/docs/special-topics/gitops/"><span class="toggle"></span><span class="menu-item-text">GitOps</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/manual-reconcile/" title="Manual Reconcile" class="dd-item" data-depth="2">
+        <a href="/potter-docs/controller-docs/docs/special-topics/manual-reconcile/"><span class="toggle"></span><span class="menu-item-text">Manual Reconcile</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/named-secrets/" title="Named Secrets" class="dd-item" data-depth="2">
+        <a href="/potter-docs/controller-docs/docs/special-topics/named-secrets/"><span class="toggle"></span><span class="menu-item-text">Named Secrets</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/resource-ready-requirements/" title="Ready Requirements" class="dd-item" data-depth="2">
+        <a href="/potter-docs/controller-docs/docs/special-topics/resource-ready-requirements/"><span class="toggle"></span><span class="menu-item-text">Ready Requirements</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/secret-handling/" title="Secret Handling" class="dd-item" data-depth="2">
+        <a href="/potter-docs/controller-docs/docs/special-topics/secret-handling/"><span class="toggle"></span><span class="menu-item-text">Secret Handling</span>
+        </a></li></ul></li></ul></li></ul>
+    </div>
+</nav>
+<a href="#" class="menu-toggler"><i class="fa fa-angle-double-left"></i></a>
+
+<script>
+    $(document).ready(function(){
+        $("#sidebar .dd-item:not(.top-level):not(.parent)").hide();
+        $("#sidebar .dd-item.parent").siblings(".dd-item").show();
+        $('.dd-item', "#sidebar .dd-item.parent").show();
+
+        
+        $(".menu-toggler").click(function(evt){
+            $("#sidebar").toggleClass("collapsed");
+            $(".menu-toggler span").toggleClass("fa-angle-double-left");
+            $(".menu-toggler span").toggleClass("fa-angle-double-right");
+        });
+    })
+</script>
+
       <section>
         
         <div class="highlightable body-inner-wrapper">
@@ -188,11 +248,33 @@
           
           <div id="body-inner" class="">
             
+<div class="docs page"><h1>Special Topics</h1>
+  <div class="properties">
+      
+  </div>
   
+    
+
+	
+	
+</div>
             
           </div>
         </div>
         
+  
+              <div class="howto_tickets">
+                
+                
+                
+                
+                <a href="https://github.com/gardener/potter-hub/issues/new/choose" target="_blank">
+                    <span>Let us know how can we improve.</span>
+                    <span>Open <img src="https://gardener.github.io/potter-docs/images/branding/github-mark-logo-green.svg"/> GitHub Issue <i class="fa fa-external-link" aria-hidden="true"></i></span>
+                </a>
+            </div>
+  
+
       </section>
       
     </div><style>
