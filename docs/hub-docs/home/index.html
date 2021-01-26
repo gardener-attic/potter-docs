@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Project Potter Website"><meta name="copyright" content="Copyright 2020 Potter project authors.">
   
-  <title>Docs :: Potter</title>
+  <title>Home :: Potter</title>
   <link rel="icon" type="image/x-icon" href='https://gardener.github.io/potter-docs/images/favicon.ico'>
   <link rel="icon" type="image/png"    href='https://gardener.github.io/potter-docs/images/favicon-32x32.png' sizes="32x32">
   <link rel="icon" type="image/png"    href='https://gardener.github.io/potter-docs/images/favicon-16x16.png' sizes="16x16">
@@ -44,7 +44,7 @@
 </head>
 
 
-  <body data-url="/potter-docs/controller-docs/docs/" class="has-sticky-navigation">
+  <body data-url="/potter-docs/hub-docs/home/" class="has-sticky-navigation">
       
     <script>
   $(document).ready(function () {
@@ -110,15 +110,15 @@
               <a href="/potter-docs/contribute/">Contribute</a>
             </li>
             
-            <li class="link has-child active"><a href="/potter-docs/controller-docs/docs/">Controller Docs 0.0.0</a>
-            </li>
-            
-            
             
             
             <li class="link has-child">
-              <a href="/potter-docs/hub-docs/home">Hub Docs</a>
+              <a href="/potter-docs/controller-docs/home">Controller Docs</a>
             </li>
+            
+            <li class="link has-child active"><a href="/potter-docs/hub-docs/home/">Hub Docs 0.0.1</a>
+            </li>
+            
           </ul>
         </div>
       </div>
@@ -180,18 +180,18 @@
 </style>
     
     
-  
+
 <div class="sln">
     <div class="overlay-band">
         <ul class="nav-list container">
             
-            <li title="Home"><a class="navbar-link" href="/potter-docs/controller-docs/home/">Home</a>
+            
+            <li title="Home"><a class="navbar-link is-active" href="/potter-docs/hub-docs/home/">Home</a>
             </li>
             
             
-            <li title="Docs"><a class="navbar-link is-active" href="/potter-docs/controller-docs/docs/">Docs</a>
+            <li title="Docs"><a class="navbar-link" href="/potter-docs/hub-docs/docs/">Docs</a>
             </li>
-            
         </ul>
     </div>
 </div>
@@ -199,88 +199,52 @@
     
     <div class="main container">
       
-  <nav id="sidebar" class="collapsed container menu">
-
-    <div class="highlightable">
-        <ul class="topics"><li data-nav-id="/potter-docs/controller-docs/docs/" title="Docs" class="dd-item parent active root  collapsible" data-depth="0">
-        <a href="/potter-docs/controller-docs/docs/"><span class="menu-item-text">Docs</span>
-        </a><ul><li data-nav-id="/potter-docs/controller-docs/docs/helm-example/" title="Cluster-BoM Example with Helm Applications" class="dd-item top-level" data-depth="1">
-        <a href="/potter-docs/controller-docs/docs/helm-example/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Example with Helm Applications</span>
-        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/kapp-example/" title="Cluster-BoM Example with kapp Applications" class="dd-item top-level" data-depth="1">
-        <a href="/potter-docs/controller-docs/docs/kapp-example/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Example with kapp Applications</span>
-        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/plain-yaml-example/" title="Cluster-BoM Example with plain yaml K8s resources" class="dd-item top-level" data-depth="1">
-        <a href="/potter-docs/controller-docs/docs/plain-yaml-example/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Example with plain yaml K8s resources</span>
-        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/status/" title="Cluster-BoM Status Section explained" class="dd-item top-level" data-depth="1">
-        <a href="/potter-docs/controller-docs/docs/status/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Status Section explained</span>
-        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/" title="Special Topics" class="dd-item top-level collapsible collapsed" data-depth="1">
-        <a href="/potter-docs/controller-docs/docs/special-topics/"><span class="toggle fa fa-angle-right"></span><span class="menu-item-text">Special Topics</span>
-        </a><ul><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/fetching-resources-from-private-github-repo/" title="Fetching Resources From a private GitHub Repository" class="dd-item" data-depth="2">
-        <a href="/potter-docs/controller-docs/docs/special-topics/fetching-resources-from-private-github-repo/"><span class="toggle"></span><span class="menu-item-text">Fetching Resources From a private GitHub Repository</span>
-        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/gitops/" title="GitOps" class="dd-item" data-depth="2">
-        <a href="/potter-docs/controller-docs/docs/special-topics/gitops/"><span class="toggle"></span><span class="menu-item-text">GitOps</span>
-        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/manual-reconcile/" title="Manual Reconcile" class="dd-item" data-depth="2">
-        <a href="/potter-docs/controller-docs/docs/special-topics/manual-reconcile/"><span class="toggle"></span><span class="menu-item-text">Manual Reconcile</span>
-        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/named-secrets/" title="Named Secrets" class="dd-item" data-depth="2">
-        <a href="/potter-docs/controller-docs/docs/special-topics/named-secrets/"><span class="toggle"></span><span class="menu-item-text">Named Secrets</span>
-        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/resource-ready-requirements/" title="Ready Requirements" class="dd-item" data-depth="2">
-        <a href="/potter-docs/controller-docs/docs/special-topics/resource-ready-requirements/"><span class="toggle"></span><span class="menu-item-text">Ready Requirements</span>
-        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/secret-handling/" title="Secret Handling" class="dd-item" data-depth="2">
-        <a href="/potter-docs/controller-docs/docs/special-topics/secret-handling/"><span class="toggle"></span><span class="menu-item-text">Secret Handling</span>
-        </a></li></ul></li></ul></li></ul>
-    </div>
-</nav>
-<a href="#" class="menu-toggler"><i class="fa fa-angle-double-left"></i></a>
-
-<script>
-    $(document).ready(function(){
-        $("#sidebar .dd-item:not(.top-level):not(.parent)").hide();
-        $("#sidebar .dd-item.parent").siblings(".dd-item").show();
-        $('.dd-item', "#sidebar .dd-item.parent").show();
-
-        
-        $(".menu-toggler").click(function(evt){
-            $("#sidebar").toggleClass("collapsed");
-            $(".menu-toggler span").toggleClass("fa-angle-double-left");
-            $(".menu-toggler span").toggleClass("fa-angle-double-right");
-        });
-    })
-</script>
-
       <section>
         
         <div class="highlightable body-inner-wrapper">
           
           
           <div id="body-inner" class="">
-            
-<div class="docs page"><h1>Docs</h1>
-  <div class="properties">
-      
+            <link rel="stylesheet" href="/potter-docs/css/slick.css?1611674364">
+<link rel="stylesheet" href="/potter-docs/css/slick-theme.css?1611674364">
+
+<div class="docs home">
+  <h1 class="title">
+    
+    Hub Docs
+    
+  </h1>
+  <section>
+     
+    Learn how to deploy, operate, and use potter-hub.
+    
+  </section>
+  <div class="list">
+    
+    
+    
+    
+    
+    
+    <a class="tile" href="/potter-docs/hub-docs/docs/">
+      <h1>Docs</h1>
+      <div class="description"></div>
+    </a>
+    
+    
   </div>
   
-    
 
-	<p>Welcome to the potter-controller docs! Here, you can find everything you always wanted to know about the controller part of project Potter. As a first time visitor, you might want to first read through the <a href="../../hub-docs/docs">Potter project overview</a>. If you are looking for specific potter-controller topics, please see the navigation on the left hand side.</p>
-
-	
+<div class="license">
+  Documentation license: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
 </div>
+</div>
+<script src="/potter-docs/js/slick.js?1611674364"></script>
+<script src="/potter-docs/js/docs.js?1611674364"></script>
             
           </div>
         </div>
         
-  
-              <div class="howto_tickets">
-                
-                
-                
-                
-                <a href="https://github.com/gardener/potter-hub/issues/new/choose" target="_blank">
-                    <span>Let us know how can we improve.</span>
-                    <span>Open <img src="https://gardener.github.io/potter-docs/images/branding/github-mark-logo-green.svg"/> GitHub Issue <i class="fa fa-external-link" aria-hidden="true"></i></span>
-                </a>
-            </div>
-  
-
       </section>
       
     </div><style>
