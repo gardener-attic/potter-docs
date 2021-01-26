@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Project Potter Website"><meta name="copyright" content="Copyright 2020 Potter project authors.">
   
-  <title>Home :: Potter</title>
+  <title>User Interface :: Potter</title>
   <link rel="icon" type="image/x-icon" href='https://gardener.github.io/potter-docs/images/favicon.ico'>
   <link rel="icon" type="image/png"    href='https://gardener.github.io/potter-docs/images/favicon-32x32.png' sizes="32x32">
   <link rel="icon" type="image/png"    href='https://gardener.github.io/potter-docs/images/favicon-16x16.png' sizes="16x16">
@@ -44,7 +44,7 @@
 </head>
 
 
-  <body data-url="/potter-docs/controller-docs/home/" class="has-sticky-navigation">
+  <body data-url="/potter-docs/hub-docs-0.0.1/docs/ui/" class="has-sticky-navigation">
       
     <script>
   $(document).ready(function () {
@@ -110,16 +110,53 @@
               <a href="/potter-docs/contribute/">Contribute</a>
             </li>
             
-            <li class="link has-child active"><a href="/potter-docs/controller-docs/home/">Controller Docs 0.0.0</a>
-            </li>
-            
-            
-            
             
             
             <li class="link has-child">
-              <a href="/potter-docs/hub-docs/home">Hub Docs</a>
+              <a href="/potter-docs/controller-docs/home">Controller Docs</a>
             </li>
+            
+            
+            <li class="link has-child active">
+
+
+
+
+
+
+
+
+<a id="docSelector">Hub Docs 0.0.1</a>
+<div id="docOptions" class="doc-options">
+    <ul><li>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://gardener.github.io/potter-docs///hub-docs/home">Hub Docs
+                0.1.0
+            </a>
+            
+        </li><li>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://gardener.github.io/potter-docs///hub-docs-0.0.1/home" class="activeVersion">Hub Docs
+                0.0.1
+            </a>
+            
+        </li></ul>
+</div>
+              
+            </li>
+            
           </ul>
         </div>
       </div>
@@ -181,19 +218,19 @@
 </style>
     
     
-
+  
 <div class="sln">
     <div class="overlay-band">
         <ul class="nav-list container">
             
-            <li title="Home"><a class="navbar-link is-active" href="/potter-docs/controller-docs/home/">Home</a>
+            
+            <li title="Home"><a class="navbar-link" href="/potter-docs/hub-docs-0.0.1/home/">Home</a>
             </li>
             
             
             
-            <li title="Docs"><a class="navbar-link" href="/potter-docs/controller-docs/docs/">Docs</a>
+            <li title="Docs"><a class="navbar-link is-active" href="/potter-docs/hub-docs-0.0.1/docs/">Docs</a>
             </li>
-            
             
         </ul>
     </div>
@@ -202,52 +239,85 @@
     
     <div class="main container">
       
+  <nav id="sidebar" class="collapsed container menu">
+
+    <div class="highlightable">
+        <ul class="topics"><li data-nav-id="/potter-docs/hub-docs-0.0.1/docs/" title="Docs" class="dd-item parent root  collapsible" data-depth="0">
+        <a href="/potter-docs/hub-docs-0.0.1/docs/"><span class="menu-item-text">Docs</span>
+        </a><ul><li data-nav-id="/potter-docs/hub-docs-0.0.1/docs/ui/" title="User Interface" class="dd-item parent active top-level" data-depth="1">
+        <a href="/potter-docs/hub-docs-0.0.1/docs/ui/"><span class="toggle"></span><span class="menu-item-text">User Interface</span>
+        </a></li></ul></li></ul>
+    </div>
+</nav>
+<a href="#" class="menu-toggler"><i class="fa fa-angle-double-left"></i></a>
+
+<script>
+    $(document).ready(function(){
+        $("#sidebar .dd-item:not(.top-level):not(.parent)").hide();
+        $("#sidebar .dd-item.parent").siblings(".dd-item").show();
+        $('.dd-item', "#sidebar .dd-item.parent").show();
+
+        
+        $(".menu-toggler").click(function(evt){
+            $("#sidebar").toggleClass("collapsed");
+            $(".menu-toggler span").toggleClass("fa-angle-double-left");
+            $(".menu-toggler span").toggleClass("fa-angle-double-right");
+        });
+    })
+</script>
+
       <section>
         
         <div class="highlightable body-inner-wrapper">
           
           
           <div id="body-inner" class="">
-            <link rel="stylesheet" href="/potter-docs/css/slick.css?1611678171">
-<link rel="stylesheet" href="/potter-docs/css/slick-theme.css?1611678171">
-
-<div class="docs home">
-  <h1 class="title">
-    
-    Controller Docs
-    
-  </h1>
-  <section>
-     
-    Learn how to deploy, operate, and use potter-controller.
-    
-  </section>
-  <div class="list">
-    
-    
-    
-    
-    
-    
-    <a class="tile" href="/potter-docs/controller-docs/docs/">
-      <h1>Docs</h1>
-      <div class="description"></div>
-    </a>
-    
-    
+            
+<div class="docs page"><h1>User Interface</h1>
+  <div class="properties">
+      
   </div>
   
+    
 
-<div class="license">
-  Documentation license: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+	<p>The AppHub UI can be opened in two different modes, with or without a specific target cluster in the URL.</p>
+<h2 id="using-the-apphub-ui-with-a-target-cluster">Using the AppHub UI with a target cluster</h2>
+<p>To manually deploy Helm charts into a cluster, the Application Hub provides a <em>Hub UI</em>. To access it on the Gardener Dashboard, choose [YOUR-PROJECT] &gt; <em>CLUSTERS</em> &gt; <em>External Tools</em> &gt; K8s Applications and Service Hub*.</p>
+<p>The UI is divided into three main sections called <em>Applications</em>, <em>Cluster BoMs</em>, and <em>Catalog</em>:</p>
+<ul>
+<li>
+<p>The <strong>Applications section</strong> displays the deployments that are currently available in the Cluster. Note that this view depends on the Namespace selection, which is located in the top-right corner of the UI. The default selection is <em>All Namespaces</em>. Deployments that are managed via Cluster BoMs are marked with a special orange badge. By clicking on this badge, it is possible to directly jump to the corresponding Cluster BoM in the UI.</p>
+</li>
+<li>
+<p>The <strong>Cluster BoMs section</strong> displays the list of all Cluster BoMs that currently exist for the selected cluster. By clicking on a single Cluster BoM in the list, the Cluster BoM details view is opening. In this view, the detailed state of the Cluster BoM is displayed and upgraded live via WebSockets. Users can also manually trigger a reconcile or download the Cluster BoM YAML via the UI.</p>
+</li>
+<li>
+<p>The <strong>Catalog view</strong> displays all Helm charts of all Repositories connected to the Application Hub in a landscape. To deploy a Helm chart, choose the respective card within the catalog, and then <em>Deploy</em> in the upper-right corner. A view is displayed, showing the values that are passed to the Helm chart during deployment. The values can be edited in this view. After clicking <em>Submit</em>, the Helm deployment starts. The <em>Status View</em> displays the current state of the deployment.</p>
+</li>
+</ul>
+<p>Note that deployments triggered in the UI are directly deployed to the Cluster, and therefore aren’t handled using Cluster-BoMs or added to an existing Cluster-BoM. This behaviour will change in the very near future.</p>
+<h2 id="using-the-apphub-ui-without-a-target-cluster">Using the AppHub UI without a target cluster</h2>
+<p>If you open the AppHub UI without a target cluster in the URL, it only shows the Hub Catalog. This allows you to browse all Helm charts of all repositories connected to the Application Hub, without being in the context of a target cluster. In this mode, you cannot perform any actions that depend on a target cluster, like deploying/updating/deleting applications. The Hub Catalog can be accessed via <code>&lt;hub-base-url&gt;/#/catalog</code>.</p>
+
+	
 </div>
-</div>
-<script src="/potter-docs/js/slick.js?1611678171"></script>
-<script src="/potter-docs/js/docs.js?1611678171"></script>
             
           </div>
         </div>
         
+  
+              <div class="howto_tickets">
+                
+                
+                
+                
+                <a href="https://github.com/gardener/potter-hub/issues/new/choose" target="_blank">
+                    <span>Let us know how can we improve.</span>
+                    <span>Open <img src="https://gardener.github.io/potter-docs/images/branding/github-mark-logo-green.svg"/> GitHub Issue <i class="fa fa-external-link" aria-hidden="true"></i></span>
+                </a>
+            </div>
+  
+
       </section>
       
     </div><style>
