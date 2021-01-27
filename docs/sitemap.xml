@@ -3,11 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/home/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/home/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/home/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/home/</loc>
   </url>
   
   <url>
@@ -19,11 +19,11 @@
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/docs/helm-example/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/helm-example/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/helm-example/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/docs/helm-example/</loc>
   </url>
   
   <url>
@@ -31,11 +31,11 @@
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/docs/kapp-example/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/kapp-example/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/kapp-example/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/docs/kapp-example/</loc>
   </url>
   
   <url>
@@ -43,11 +43,11 @@
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/docs/plain-yaml-example/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/plain-yaml-example/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/plain-yaml-example/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/docs/plain-yaml-example/</loc>
   </url>
   
   <url>
@@ -55,11 +55,11 @@
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/docs/status/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/status/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/status/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/docs/status/</loc>
   </url>
   
   <url>
@@ -67,11 +67,11 @@
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/docs/special-topics/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/docs/special-topics/</loc>
   </url>
   
   <url>
@@ -84,11 +84,11 @@
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/docs/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/docs/</loc>
   </url>
   
   <url>
@@ -104,11 +104,11 @@
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/docs/special-topics/fetching-resources-from-private-github-repo/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/fetching-resources-from-private-github-repo/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/fetching-resources-from-private-github-repo/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/docs/special-topics/fetching-resources-from-private-github-repo/</loc>
   </url>
   
   <url>
@@ -116,11 +116,11 @@
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/docs/special-topics/gitops/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/gitops/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/gitops/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/docs/special-topics/gitops/</loc>
   </url>
   
   <url>
@@ -128,11 +128,11 @@
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/</loc>
   </url>
   
   <url>
@@ -144,11 +144,11 @@
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/docs/special-topics/manual-reconcile/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/manual-reconcile/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/manual-reconcile/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/docs/special-topics/manual-reconcile/</loc>
   </url>
   
   <url>
@@ -156,11 +156,11 @@
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/docs/special-topics/named-secrets/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/named-secrets/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/named-secrets/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/docs/special-topics/named-secrets/</loc>
   </url>
   
   <url>
@@ -173,11 +173,11 @@
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/docs/special-topics/resource-ready-requirements/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/resource-ready-requirements/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/resource-ready-requirements/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/docs/special-topics/resource-ready-requirements/</loc>
   </url>
   
   <url>
@@ -185,11 +185,11 @@
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.0.0/docs/special-topics/secret-handling/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/secret-handling/</loc>
   </url>
   
   <url>
-    <loc>https://gardener.github.io/potter-docs/controller-docs-0.1.0/docs/special-topics/secret-handling/</loc>
+    <loc>https://gardener.github.io/potter-docs/controller-docs-0.2.0/docs/special-topics/secret-handling/</loc>
   </url>
   
   <url>
