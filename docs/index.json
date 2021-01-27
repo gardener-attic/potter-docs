@@ -7,20 +7,6 @@
 	"content": ""
 },
 {
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.0.1/home/",
-	"title": "Home",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.1.0/home/",
-	"title": "Home",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://gardener.github.io/potter-docs/hub-docs/home/",
 	"title": "Home",
 	"tags": [],
@@ -77,20 +63,6 @@
 	"content": "Welcome to the potter-controller docs! Here, you can find everything you always wanted to know about the controller part of project Potter. As a first time visitor, you might want to first read through the Potter project overview. If you are looking for specific potter-controller topics, please see the navigation on the left hand side.\n"
 },
 {
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.0.1/docs/",
-	"title": "Docs",
-	"tags": [],
-	"description": "",
-	"content": "Welcome to the K8s Applications and Services Hub! Here, you can find everything you always wanted to know about the K8s Applications and Services Hub (or just \u0026lsquo;AppHub\u0026rsquo;). As a first time visitor, you might want to first go through this document to get an overview over the K8s Applications and Services Hub. If you are looking for something specific, please see the navigation on the left hand side.\n For information about Cluster-BoMs, visit the Controller Docs.\n What Is the K8s Applications and Services Hub? The K8s Applications and Services Hub, shortly Application Hub, is a Kubernetes extension from SAP to deploy and manage deployments in Kubernetes clusters. It’s a central component in a Kubernetes landscape and doesn’t require any additional components running in the target shoot cluster. Target groups are primarily SAP teams who want to deploy Kubernetes workload in a Gardener-managed cluster.\nBenefits of using the K8s Applications and Services Hub  Possibility to have one single YAML file describing the full set of K8s Deployments for a cluster instead of using individual Command Scripts for each K8s Deployment and also managing those deployments individually. Simply create a \u0026ldquo;Bill-of-Material\u0026rdquo; containing multiple k8s deployments using different deployment technologies like Helm, kapp or plain yaml (planned) Establish a declarative approach for K8s deployments (using Cluster-BoMs) as the standard for SAPs K8s Workloads to eliminate the need of creating specific deployment scripts to deploy K8s workload to Clusters, which quickly becomes unmanageable, especially in private cloud scenarios No need to deal with Helm or kapp (as well as other k8s deployment technologies) in detail. Instead, let the AppHub be responsible for handling these deployment technology details Possibility to retrieve and use one single status (the Cluster-BoM Status), representing the overall state of all deployments in a cluster, instead of trying to compute the overall cluster deployment state on your own Dependency-Management between Cluster Deployments (planned), where for example the sequence of K8s deployments can be specified, even between different K8s deployment technologies like Helm, kapp or plain YAML files Import/Export Management between deployments (planned), where specific data created during deployment of component A is needed during deployment of Component B Cluster-BoMs represent the single source of truth of what is actually running on a specific cluster, making it possible to provide deployment statistics across Gardener Projects (\u0026ldquo;What exactly runs on SAP-managed Clusters ?\u0026quot;)  Architecture Overview What can be deployed? Supported Kubernetes deployments are currently based on Helm charts and kapp applications, but other types will be supported in future.\nTo trigger deployments, two approaches are available:\n Manual deployments using the UI Automated deployments using Cluster-BoMs (see the Controller Docs).  The Helm charts are located in dedicated Helm chart repositories. These repos must be connected to a potter-hub installation according to the installation guide.\nContacts If you have any questions about the AppHub, please don\u0026rsquo;t hesitate to contact us via the following channels (in preferred order):\n AppHub Slack Channel Team DL  Requirements Handling If you have a requirement towards the AppHub, please get in contact with the Product Owner Ingo Kober.\n"
-},
-{
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.1.0/docs/",
-	"title": "Docs",
-	"tags": [],
-	"description": "",
-	"content": "Welcome to the K8s Applications and Services Hub! Here, you can find everything you always wanted to know about the K8s Applications and Services Hub (or just \u0026lsquo;AppHub\u0026rsquo;). As a first time visitor, you might want to first go through this document to get an overview over the K8s Applications and Services Hub. If you are looking for something specific, please see the navigation on the left hand side.\n For information about Cluster-BoMs, visit the Controller Docs.\n What Is the K8s Applications and Services Hub? The K8s Applications and Services Hub, shortly Application Hub, is a Kubernetes extension from SAP to deploy and manage deployments in Kubernetes clusters. It’s a central component in a Kubernetes landscape and doesn’t require any additional components running in the target shoot cluster. Target groups are primarily SAP teams who want to deploy Kubernetes workload in a Gardener-managed cluster.\nBenefits of using the K8s Applications and Services Hub  Possibility to have one single YAML file describing the full set of K8s Deployments for a cluster instead of using individual Command Scripts for each K8s Deployment and also managing those deployments individually. Simply create a \u0026ldquo;Bill-of-Material\u0026rdquo; containing multiple k8s deployments using different deployment technologies like Helm, kapp or plain yaml (planned) Establish a declarative approach for K8s deployments (using Cluster-BoMs) as the standard for SAPs K8s Workloads to eliminate the need of creating specific deployment scripts to deploy K8s workload to Clusters, which quickly becomes unmanageable, especially in private cloud scenarios No need to deal with Helm or kapp (as well as other k8s deployment technologies) in detail. Instead, let the AppHub be responsible for handling these deployment technology details Possibility to retrieve and use one single status (the Cluster-BoM Status), representing the overall state of all deployments in a cluster, instead of trying to compute the overall cluster deployment state on your own Dependency-Management between Cluster Deployments (planned), where for example the sequence of K8s deployments can be specified, even between different K8s deployment technologies like Helm, kapp or plain YAML files Import/Export Management between deployments (planned), where specific data created during deployment of component A is needed during deployment of Component B Cluster-BoMs represent the single source of truth of what is actually running on a specific cluster, making it possible to provide deployment statistics across Gardener Projects (\u0026ldquo;What exactly runs on SAP-managed Clusters ?\u0026quot;)  Architecture Overview What can be deployed? Supported Kubernetes deployments are currently based on Helm charts and kapp applications, but other types will be supported in future.\nTo trigger deployments, two approaches are available:\n Manual deployments using the UI Automated deployments using Cluster-BoMs (see the Controller Docs).  The Helm charts are located in dedicated Helm chart repositories. These repos must be connected to a potter-hub installation according to the installation guide.\nContacts If you have any questions about the AppHub, please don\u0026rsquo;t hesitate to contact us via the following channels (in preferred order):\n AppHub Slack Channel Team DL  Requirements Handling If you have a requirement towards the AppHub, please get in contact with the Product Owner Ingo Kober.\n"
-},
-{
 	"uri": "https://gardener.github.io/potter-docs/hub-docs/docs/",
 	"title": "Docs",
 	"tags": [],
@@ -120,20 +92,6 @@
 },
 {
 	"uri": "https://gardener.github.io/potter-docs/controller-docs/",
-	"title": "Home",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.0.1/",
-	"title": "Home",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.1.0/",
 	"title": "Home",
 	"tags": [],
 	"description": "",
@@ -187,20 +145,6 @@
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.0.1/docs/ui/",
-	"title": "User Interface",
-	"tags": [],
-	"description": "",
-	"content": "The AppHub UI can be opened in two different modes, with or without a specific target cluster in the URL.\nUsing the AppHub UI with a target cluster To manually deploy Helm charts into a cluster, the Application Hub provides a Hub UI. To access it on the Gardener Dashboard, choose [YOUR-PROJECT] \u0026gt; CLUSTERS \u0026gt; External Tools \u0026gt; K8s Applications and Service Hub*.\nThe UI is divided into three main sections called Applications, Cluster BoMs, and Catalog:\n  The Applications section displays the deployments that are currently available in the Cluster. Note that this view depends on the Namespace selection, which is located in the top-right corner of the UI. The default selection is All Namespaces. Deployments that are managed via Cluster BoMs are marked with a special orange badge. By clicking on this badge, it is possible to directly jump to the corresponding Cluster BoM in the UI.\n  The Cluster BoMs section displays the list of all Cluster BoMs that currently exist for the selected cluster. By clicking on a single Cluster BoM in the list, the Cluster BoM details view is opening. In this view, the detailed state of the Cluster BoM is displayed and upgraded live via WebSockets. Users can also manually trigger a reconcile or download the Cluster BoM YAML via the UI.\n  The Catalog view displays all Helm charts of all Repositories connected to the Application Hub in a landscape. To deploy a Helm chart, choose the respective card within the catalog, and then Deploy in the upper-right corner. A view is displayed, showing the values that are passed to the Helm chart during deployment. The values can be edited in this view. After clicking Submit, the Helm deployment starts. The Status View displays the current state of the deployment.\n  Note that deployments triggered in the UI are directly deployed to the Cluster, and therefore aren’t handled using Cluster-BoMs or added to an existing Cluster-BoM. This behaviour will change in the very near future.\nUsing the AppHub UI without a target cluster If you open the AppHub UI without a target cluster in the URL, it only shows the Hub Catalog. This allows you to browse all Helm charts of all repositories connected to the Application Hub, without being in the context of a target cluster. In this mode, you cannot perform any actions that depend on a target cluster, like deploying/updating/deleting applications. The Hub Catalog can be accessed via \u0026lt;hub-base-url\u0026gt;/#/catalog.\n"
-},
-{
-	"uri": "https://gardener.github.io/potter-docs/hub-docs-0.1.0/docs/ui/",
-	"title": "User Interface",
-	"tags": [],
-	"description": "",
-	"content": "The AppHub UI can be opened in two different modes, with or without a specific target cluster in the URL.\nUsing the AppHub UI with a target cluster To manually deploy Helm charts into a cluster, the Application Hub provides a Hub UI. To access it on the Gardener Dashboard, choose [YOUR-PROJECT] \u0026gt; CLUSTERS \u0026gt; External Tools \u0026gt; K8s Applications and Service Hub*.\nThe UI is divided into three main sections called Applications, Cluster BoMs, and Catalog:\n  The Applications section displays the deployments that are currently available in the Cluster. Note that this view depends on the Namespace selection, which is located in the top-right corner of the UI. The default selection is All Namespaces. Deployments that are managed via Cluster BoMs are marked with a special orange badge. By clicking on this badge, it is possible to directly jump to the corresponding Cluster BoM in the UI.\n  The Cluster BoMs section displays the list of all Cluster BoMs that currently exist for the selected cluster. By clicking on a single Cluster BoM in the list, the Cluster BoM details view is opening. In this view, the detailed state of the Cluster BoM is displayed and upgraded live via WebSockets. Users can also manually trigger a reconcile or download the Cluster BoM YAML via the UI.\n  The Catalog view displays all Helm charts of all Repositories connected to the Application Hub in a landscape. To deploy a Helm chart, choose the respective card within the catalog, and then Deploy in the upper-right corner. A view is displayed, showing the values that are passed to the Helm chart during deployment. The values can be edited in this view. After clicking Submit, the Helm deployment starts. The Status View displays the current state of the deployment.\n  Note that deployments triggered in the UI are directly deployed to the Cluster, and therefore aren’t handled using Cluster-BoMs or added to an existing Cluster-BoM. This behaviour will change in the very near future.\nUsing the AppHub UI without a target cluster If you open the AppHub UI without a target cluster in the URL, it only shows the Hub Catalog. This allows you to browse all Helm charts of all repositories connected to the Application Hub, without being in the context of a target cluster. In this mode, you cannot perform any actions that depend on a target cluster, like deploying/updating/deleting applications. The Hub Catalog can be accessed via \u0026lt;hub-base-url\u0026gt;/#/catalog.\n"
 },
 {
 	"uri": "https://gardener.github.io/potter-docs/hub-docs/docs/ui/",
