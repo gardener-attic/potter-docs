@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Project Potter Website"><meta name="copyright" content="Copyright 2020 Potter project authors.">
   
-  <title>Home :: Potter</title>
+  <title>Docs :: Potter</title>
   <link rel="icon" type="image/x-icon" href='https://gardener.github.io/potter-docs/images/favicon.ico'>
   <link rel="icon" type="image/png"    href='https://gardener.github.io/potter-docs/images/favicon-32x32.png' sizes="32x32">
   <link rel="icon" type="image/png"    href='https://gardener.github.io/potter-docs/images/favicon-16x16.png' sizes="16x16">
@@ -44,7 +44,7 @@
 </head>
 
 
-  <body data-url="/potter-docs/controller-docs-0.4.0/" class="has-sticky-navigation">
+  <body data-url="/potter-docs/hub-docs-0.67.0/docs/" class="has-sticky-navigation">
       
     <script>
   $(document).ready(function () {
@@ -112,6 +112,14 @@
             
             
             
+            
+            
+            <li class="link has-child">
+              <a href="/potter-docs/controller-docs/home">Controller Docs</a>
+            </li>
+            
+            
+            
             <li class="link has-child active">
 
 
@@ -122,7 +130,7 @@
 
 
 
-<a id="docSelector">Controller Docs 0.4.0</a>
+<a id="docSelector">Hub Docs 0.67.0</a>
 <div id="docOptions" class="doc-options">
     <ul><li>
             
@@ -132,8 +140,8 @@
             
             
             
-            <a href="https://gardener.github.io/potter-docs///controller-docs/home">Controller Docs
-                0.48.0
+            <a href="https://gardener.github.io/potter-docs///hub-docs/home">Hub Docs
+                0.68.0
             </a>
             
         </li><li>
@@ -144,8 +152,8 @@
             
             
             
-            <a href="https://gardener.github.io/potter-docs///controller-docs-0.4.0/home" class="activeVersion">Controller Docs
-                0.4.0
+            <a href="https://gardener.github.io/potter-docs///hub-docs-0.67.0/home" class="activeVersion">Hub Docs
+                0.67.0
             </a>
             
         </li><li>
@@ -156,8 +164,8 @@
             
             
             
-            <a href="https://gardener.github.io/potter-docs///controller-docs-0.3.0/home">Controller Docs
-                0.3.0
+            <a href="https://gardener.github.io/potter-docs///hub-docs-0.66.0/home">Hub Docs
+                0.66.0
             </a>
             
         </li></ul>
@@ -165,14 +173,6 @@
               
             </li>
             
-            
-            
-            
-            
-            
-            <li class="link has-child">
-              <a href="/potter-docs/hub-docs/home">Hub Docs</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -234,9 +234,60 @@
 </style>
     
     
+  
+<div class="sln">
+    <div class="overlay-band">
+        <ul class="nav-list container">
+            
+            
+            
+            
+            
+            <li title="Home"><a class="navbar-link" href="/potter-docs/hub-docs-0.67.0/home/">Home</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li title="Docs"><a class="navbar-link is-active" href="/potter-docs/hub-docs-0.67.0/docs/">Docs</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
     
     <div class="main container">
       
+  <nav id="sidebar" class="collapsed container menu">
+
+    <div class="highlightable">
+        <ul class="topics"><li data-nav-id="/potter-docs/hub-docs-0.67.0/docs/" title="Docs" class="dd-item parent active root  collapsible" data-depth="0">
+        <a href="/potter-docs/hub-docs-0.67.0/docs/"><span class="menu-item-text">Docs</span>
+        </a><ul><li data-nav-id="/potter-docs/hub-docs-0.67.0/docs/ui/" title="User Interface" class="dd-item top-level" data-depth="1">
+        <a href="/potter-docs/hub-docs-0.67.0/docs/ui/"><span class="toggle"></span><span class="menu-item-text">User Interface</span>
+        </a></li></ul></li></ul>
+    </div>
+</nav>
+<a href="#" class="menu-toggler"><i class="fa fa-angle-double-left"></i></a>
+
+<script>
+    $(document).ready(function(){
+        $("#sidebar .dd-item:not(.top-level):not(.parent)").hide();
+        $("#sidebar .dd-item.parent").siblings(".dd-item").show();
+        $('.dd-item', "#sidebar .dd-item.parent").show();
+
+        
+        $(".menu-toggler").click(function(evt){
+            $("#sidebar").toggleClass("collapsed");
+            $(".menu-toggler span").toggleClass("fa-angle-double-left");
+            $(".menu-toggler span").toggleClass("fa-angle-double-right");
+        });
+    })
+</script>
+
       <section>
         
         <div class="highlightable body-inner-wrapper">
@@ -244,11 +295,69 @@
           
           <div id="body-inner" class="">
             
+<div class="docs page"><h1>Docs</h1>
+  <div class="properties">
+      
+  </div>
   
+    
+
+	<p>Welcome to the K8s Applications and Services Hub! Here, you can find everything you always wanted to know about the K8s
+Applications and Services Hub (or just &lsquo;AppHub&rsquo;). As a first time visitor, you might want to first go through this document to get an overview over the K8s Applications and Services Hub. If you are looking for something specific, please see the navigation on the left hand side.</p>
+<blockquote>
+<p>For information about Cluster-BoMs, visit the <a href="../../controller-docs/home">Controller Docs</a>.</p>
+</blockquote>
+<h2 id="what-is-the-k8s-applications-and-services-hub">What Is the K8s Applications and Services Hub?</h2>
+<p>The <em>K8s Applications and Services Hub</em>, shortly <em>Application Hub</em>, is a Kubernetes extension from SAP to deploy and manage deployments in Kubernetes clusters. It’s a central component in a Kubernetes landscape and doesn’t require any additional components running in the target shoot cluster.
+Target groups are primarily SAP teams who want to deploy Kubernetes workload in a Gardener-managed cluster.</p>
+<h2 id="benefits-of-using-the-k8s-applications-and-services-hub">Benefits of using the K8s Applications and Services Hub</h2>
+<ul>
+<li>Possibility to have <strong>one single YAML file describing the full set of K8s Deployments for a cluster</strong> instead of using individual Command Scripts for each K8s Deployment and also managing those deployments individually. Simply create a &ldquo;Bill-of-Material&rdquo; containing multiple k8s deployments using different deployment technologies like Helm, kapp or plain yaml (<em>planned</em>)</li>
+<li><strong>Establish a declarative approach for K8s deployments</strong> (using Cluster-BoMs) as the standard for SAPs K8s Workloads to eliminate the need of creating specific deployment scripts to deploy K8s workload to Clusters, which quickly becomes unmanageable, especially in private cloud scenarios</li>
+<li><strong>No need to deal with Helm or kapp (as well as other k8s deployment technologies) in detail</strong>. Instead, let the AppHub be responsible for handling these deployment technology details</li>
+<li><strong>Possibility to retrieve and use one single status</strong> (the Cluster-BoM Status), representing the overall state of all deployments in a cluster, instead of trying to compute the overall cluster deployment state on your own</li>
+<li><strong>Dependency-Management between Cluster Deployments</strong> (<em>planned</em>), where for example the sequence of K8s deployments can be specified, even between different K8s deployment technologies like Helm, kapp or plain YAML files</li>
+<li><strong>Import/Export Management between deployments</strong> (<em>planned</em>), where specific data created during deployment of component A is needed during deployment of Component B</li>
+<li><strong>Cluster-BoMs represent the single source of truth</strong> of what is actually running on a specific cluster, making it possible to provide deployment statistics across Gardener Projects (&ldquo;What exactly runs on SAP-managed Clusters ?&quot;)</li>
+</ul>
+<h2 id="architecture-overview">Architecture Overview</h2>
+<p><img src="./hub-overview-architecture.png" alt=""></p>
+<h2 id="what-can-be-deployed">What can be deployed?</h2>
+<p>Supported Kubernetes deployments are currently based on <a href="https://helm.sh/">Helm</a> charts and <a href="https://github.com/k14s/kapp">kapp</a> applications, but other types will be supported in future.</p>
+<p>To trigger deployments, two approaches are available:</p>
+<ul>
+<li><a href="./ui/">Manual deployments using the UI</a></li>
+<li>Automated deployments using Cluster-BoMs (see the <a href="../../controller-docs/home">Controller Docs</a>).</li>
+</ul>
+<p>The Helm charts are located in dedicated Helm chart repositories. These repos must be connected to a potter-hub installation according to the installation guide.</p>
+<h3 id="contacts">Contacts</h3>
+<p>If you have any questions about the AppHub, please don&rsquo;t hesitate to contact us via the following channels (in preferred order):</p>
+<ol>
+<li><a href="https://sap-cp.slack.com/app_redirect?channel=k8s-hub">AppHub Slack Channel</a></li>
+<li><a href="mailto:DL_5DD55C9CB52A299DF06071EA@global.corp.sap">Team DL</a></li>
+</ol>
+<h3 id="requirements-handling">Requirements Handling</h3>
+<p>If you have a requirement towards the AppHub, please get in contact with the Product Owner <a href="mailto:ingo.kober@sap.com">Ingo Kober</a>.</p>
+
+	
+</div>
             
           </div>
         </div>
         
+  
+              <div class="howto_tickets">
+                
+                
+                
+                
+                <a href="https://github.com/gardener/potter-hub/issues/new/choose" target="_blank">
+                    <span>Let us know how can we improve.</span>
+                    <span>Open <img src="https://gardener.github.io/potter-docs/images/branding/github-mark-logo-green.svg"/> GitHub Issue <i class="fa fa-external-link" aria-hidden="true"></i></span>
+                </a>
+            </div>
+  
+
       </section>
       
     </div><style>
