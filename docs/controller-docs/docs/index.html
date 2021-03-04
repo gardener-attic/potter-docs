@@ -15,14 +15,14 @@
   
 
   
-  <link href="/potter-docs/css/nucleus.css?1614841345" rel="stylesheet">
-  <link href="/potter-docs/css/font-awesome.min.css?1614841345" rel="stylesheet">
-  <link href="/potter-docs/css/hybrid.css?1614841345" rel="stylesheet">
-  <link href="/potter-docs/css/featherlight.min.css?1614841345" rel="stylesheet">
-  <link href="/potter-docs/css/perfect-scrollbar.min.css?1614841345" rel="stylesheet">
-  <link href="/potter-docs/css/auto-complete.css?1614841345" rel="stylesheet">
-  <link href="/potter-docs/css/skeleton.css?1614841345" rel="stylesheet">
-  <link href="/potter-docs/css/sheetslider.css?1614841345" rel="stylesheet">
+  <link href="/potter-docs/css/nucleus.css?1614842340" rel="stylesheet">
+  <link href="/potter-docs/css/font-awesome.min.css?1614842340" rel="stylesheet">
+  <link href="/potter-docs/css/hybrid.css?1614842340" rel="stylesheet">
+  <link href="/potter-docs/css/featherlight.min.css?1614842340" rel="stylesheet">
+  <link href="/potter-docs/css/perfect-scrollbar.min.css?1614842340" rel="stylesheet">
+  <link href="/potter-docs/css/auto-complete.css?1614842340" rel="stylesheet">
+  <link href="/potter-docs/css/skeleton.css?1614842340" rel="stylesheet">
+  <link href="/potter-docs/css/sheetslider.css?1614842340" rel="stylesheet">
 
   
   
@@ -30,13 +30,13 @@
   
   <link rel="stylesheet" href="/potter-docs/css/gardener.7593938070d708e7b1bec0e9172492ff8f780d7c20e680f994075d57795a3335.css">
   
-  <script src="/potter-docs/js/moment.js?1614841345"></script>
-  <script src="/potter-docs/js/vivus.js?1614841345"></script>
-  <script src="/potter-docs/js/scrollreveal.js?1614841345"></script>
-  <script src="/potter-docs/js/inlineSVG.js?1614841345"></script>
-  <script src="/potter-docs/js/jquery.min.js?1614841345"></script>
-  <script src="/potter-docs/js/fixed.js?1614841345"></script>
-  <script src="/potter-docs/js/clipboard.min.js?1614841345"></script>
+  <script src="/potter-docs/js/moment.js?1614842340"></script>
+  <script src="/potter-docs/js/vivus.js?1614842340"></script>
+  <script src="/potter-docs/js/scrollreveal.js?1614842340"></script>
+  <script src="/potter-docs/js/inlineSVG.js?1614842340"></script>
+  <script src="/potter-docs/js/jquery.min.js?1614842340"></script>
+  <script src="/potter-docs/js/fixed.js?1614842340"></script>
+  <script src="/potter-docs/js/clipboard.min.js?1614842340"></script>
 
   <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
   
@@ -122,7 +122,7 @@
 
 
 
-<a id="docSelector">Controller Docs 0.51.0</a>
+<a id="docSelector">Controller Docs 0.52.0</a>
 <div id="docOptions" class="doc-options">
     <ul><li>
             
@@ -133,6 +133,18 @@
             
             
             <a href="https://gardener.github.io/potter-docs///controller-docs/home" class="activeVersion">Controller Docs
+                0.52.0
+            </a>
+            
+        </li><li>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://gardener.github.io/potter-docs///controller-docs-0.51.0/home">Controller Docs
                 0.51.0
             </a>
             
@@ -146,18 +158,6 @@
             
             <a href="https://gardener.github.io/potter-docs///controller-docs-0.50.0/home">Controller Docs
                 0.50.0
-            </a>
-            
-        </li><li>
-            
-            
-            
-            
-            
-            
-            
-            <a href="https://gardener.github.io/potter-docs///controller-docs-0.49.0/home">Controller Docs
-                0.49.0
             </a>
             
         </li></ul>
@@ -274,6 +274,8 @@
         <a href="/potter-docs/controller-docs/docs/plain-yaml-example/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Example with plain yaml K8s resources</span>
         </a></li><li data-nav-id="/potter-docs/controller-docs/docs/status/" title="Cluster-BoM Status Section explained" class="dd-item top-level" data-depth="1">
         <a href="/potter-docs/controller-docs/docs/status/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Status Section explained</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs/docs/template/" title="Cluster-BoM Template" class="dd-item top-level" data-depth="1">
+        <a href="/potter-docs/controller-docs/docs/template/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Template</span>
         </a></li><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/" title="Special Topics" class="dd-item top-level collapsible collapsed" data-depth="1">
         <a href="/potter-docs/controller-docs/docs/special-topics/"><span class="toggle fa fa-angle-right"></span><span class="menu-item-text">Special Topics</span>
         </a><ul><li data-nav-id="/potter-docs/controller-docs/docs/special-topics/fetching-resources-from-private-github-repo/" title="Fetching Resources From a private GitHub Repository" class="dd-item" data-depth="2">
@@ -322,8 +324,189 @@
   
     
 
-	<p>Welcome to the potter-controller docs! Here, you can find everything you always wanted to know about the controller part of project Potter. As a first time visitor, you might want to first read through the <a href="../../hub-docs/docs">Potter project overview</a>. If you are looking for specific potter-controller topics, please see the navigation on the left hand side.</p>
+	<p>Welcome to the Potter Controller docs! Here, you can find everything you always wanted to know about the controller
+part of project Potter. As a first time visitor, you might want to first read through
+the <a href="../../hub-docs/docs">Potter project overview</a>. If you are looking for specific Potter Controller topics, please
+see the navigation on the left hand. The sources of the project could be found
+<a href="https://github.com/gardener/potter-controller">here</a>.</p>
+<ul>
+<li><a href="#working-with-cluster-boms">Working with Cluster-BoMs</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#procedure">Procedure</a></li>
+<li><a href="#events">Events</a></li>
+</ul>
+<p>To fully automate cluster deployments, files describing the bill of material for a cluster, shortly <em>Cluster-BoMs</em>, are used instead of the Hub UI. Such a Cluster-BoM is mainly a list of references to deployments plus their parameters. Currently Helm charts and kapp deployments are supported, but more formats will be added later.</p>
+<p>Helm charts are usually referenced with the help of Helm chart Repositories. As an alternative, it’s also possible to directly provide a link (URL) to a Helm chart (see the <a href="./helm-example">Cluster-BoM Helm example</a> for more details).</p>
+<p>Referencing kapp deployments is described in the <a href="./kapp-example">Cluster-BoM kapp example</a>.</p>
+<p>Helm and kapp deployments could be mixed in one Cluster-BoM.</p>
+<h3 id="working-with-cluster-boms">Working with Cluster-BoMs</h3>
+<p>A Cluster-BoM is a Custom Resource (CR) and can therefore be used like any other standard Kubernetes resource. For example, after specifying your deployments in a <code>yaml</code> file, you can use the following <code>kubectl</code> commands as usual:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Command</th>
+<th style="text-align:left">Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>kubectl apply -f myclusterbom.yaml</code></td>
+<td style="text-align:left">Apply your Cluster-BoM to a cluster of your project.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>kubectl get clusterbom myclusterbom -o yaml</code></td>
+<td style="text-align:left">Get information about the deployment status.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>kubectl get clusterboms</code></td>
+<td style="text-align:left">List all available Cluster-BoMs of your Gardener project.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>
+<p>You have a running installation of Gardener and Potter and access to a Gardener project.</p>
+</li>
+<li>
+<p>You have already a cluster in your Gardener project</p>
+</li>
+<li>
+<p>You should use a personalized <code>kubeconfig</code> to access Gardener. In the Gardener dashboard, go to your account and from the Access widget download your personalized kubeconfig into <code>~/.kube/kubeconfig-garden[-myproject]</code>. Follow the instructions to setup kubelogin, and create an alias like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">alias kgarden=&#34;kubectl --kubeconfig ~/.kube/kubeconfig-garden-myproject.yaml&#34;
+</code></pre></div></li>
+<li>
+<p>For an automated script or pipeline, you can use a robot service account for the Gardener project where your cluster is located. To create new service accounts on the Gardener dashboard, choose <em>Members</em> &gt; <em>Service Accounts</em> &gt; <em>+</em>.</p>
+<blockquote>
+<p>Service accounts allow access to all project resources (including all shoot clusters). Deploying resources in a cluster using a Cluster-BoM is done in the context of a service account.</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="procedure">Procedure</h3>
+<ol>
+<li>
+<p>To use the service account locally from your computer, choose your project on the Gardener dashboard, then <em>MEMBERS</em> &gt; <em>Service Accounts</em>. Download the <code>kubeconfig</code> file of the service account you want to use.</p>
+</li>
+<li>
+<p>Merge the downloaded <code>kubeconfig</code> of your service account to your existing <code>~/.kube/config</code> file or set your <code>KUBECONFIG</code> variable accordingly.</p>
+</li>
+<li>
+<p>Create a new file <code>Cluster-BoM.yaml</code>. To safe you some time, you can copy the example of the next section and adjust it to your needs.</p>
+<blockquote>
+<p>To find out which Helm charts are currently available, choose <em>CLUSTERS</em> &gt; [YOUR-CLUSTER] &gt; <em>External Tools</em> &gt; <em>K8s Applications and Services Hub</em> on the Gardener dashboard. On the Hub UI, you can browse the catalog of available Helm charts. The list of available charts depends on the specific landscape configuration.</p>
+</blockquote>
+</li>
+<li>
+<p>Edit your Cluster-BoM. If you use the example, you must at least change <code>metadata.namespace</code> and <code>spec.secretRef</code>:</p>
+<ul>
+<li>
+<p>Metadata for Cluster-BoM and <code>kubeconfig</code> of your target cluster:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>metadata.name</code></td>
+<td style="text-align:left">Technical name of this Cluster-BoM</td>
+<td style="text-align:left">The name of a Cluster-BoM must consist of lower case alphanumeric characters or <code>.</code> or <code>-</code>, must start and end with an alphanumeric character, and must not be longer than 63 characters (for example, <code>testclusterbom.01</code>).</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>metadata.namespace</code></td>
+<td style="text-align:left">The namespace of this Cluster-BoM</td>
+<td style="text-align:left"><code>garden-</code>[PROJECT-NAME-IN-GARDENER]</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>spec.secretRef</code></td>
+<td style="text-align:left">Secret with the kubeconfig of your target cluster</td>
+<td style="text-align:left">[TARGET-CLUSTER-NAME].kubeconfig</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Mandatory Configuration Parameters for the application deployments (section <code>applicationConfigs</code>):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>id</code></td>
+<td style="text-align:left">Unique ID of the application within this Cluster-BoM.<br>Pattern: <code>^[0-9a-z]{1,20}$</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>configType</code></td>
+<td style="text-align:left">Type of deployment. Currently only <code>helm</code> and <code>kapp</code> is supported.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<blockquote>
+<p>More detailed information about the Cluster-BoM Structure can be found in the examples for <a href="./helm-example">Helm</a> and <a href="./kapp-example">kapp</a> applications.</p>
+</blockquote>
+</li>
+<li>
+<p>After editing the Cluster-BoM file, use the Kubernetes context with your service account <code>kubeconfig</code> and execute the following command:</p>
+<p><code>kubectl apply -f [NAME-OF-YOUR-CLUSTERBOM].yaml</code></p>
+<blockquote>
+<p>If something is wrong within your Cluster-BoM, an error message is displayed.</p>
+</blockquote>
+</li>
+<li>
+<p>To check if the deployments worked as expected:</p>
+<ul>
+<li>
+<p>In the context of your service account, get your deployed Cluster-BoM as <code>yaml</code> output:</p>
+<p><code>kubectl get clusterbom [NAME-OF-YOUR-CLUSTERBOM] -o yaml</code></p>
+<p>At the end of the <code>yaml</code> output, there’s now a status section that includes the status of each individual deployment and the aggregated status of the complete Cluster-BoM.</p>
+<p>More information: <a href="./status">Cluster BoM Status</a></p>
+</li>
+<li>
+<p>In the context of your shoot cluster (switch your current context), check if new pods are being created for the deployments specified in your Cluster-BoM:</p>
+<p><code>kubectl get pods</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>After this initial deployment, you can also do changes to the Cluster-BoM and apply the modified Cluster-BoM again in the context of your service account to your cluster, for example:</p>
+<ul>
+<li>To change the version of a referenced chart.</li>
+<li>To add or to delete individual deployments from the Cluster-BoM.</li>
+<li>To change Helm chart values.</li>
+</ul>
+<blockquote>
+<p>Some values of the Cluster-BoM cannot be changed, for example, <code>applicationConfigs.id</code>.</p>
+</blockquote>
+</li>
+<li>
+<p>To delete <strong>all deployments</strong> of a Cluster-BoM, just delete the whole Cluster-BoM using the following command in the context of your service account:</p>
+<p><code>kubectl delete clusterbom [NAME-OF-YOUR-CLUSTERBOM] --wait=false</code></p>
+<blockquote>
+<p>The Cluster-BoM is only marked for deletion using the Kubernetes finalizer concept. Only when all applications were successfully removed from the target cluster or when the target cluster is removed itself, the Cluster-BoM disappears as well. Use option <code>--wait=true</code> if you want to wait until this process is finished.</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="events">Events</h3>
+<p>With the following command you see events for Cluster-BoMs:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt; kubectl describe clusterbom testbom
 
+...
+Events:
+  Type    Reason             Age                From                          Message
+  ----    ------             ----               ----                          -------
+  Normal  SuccessDeployment  12m (x3 over 33m)  DeploymentController      Reconcile of deployment done
+  Normal  SuccessDeployment  11m (x4 over 34m)  DeploymentController      Deployment ok
+...
+</code></pre></div>
 	
 </div>
             
@@ -363,16 +546,16 @@
   </div>
 </footer>
     
-    <script src="/potter-docs/js/perfect-scrollbar.min.js?1614841345"></script>
-    <script src="/potter-docs/js/perfect-scrollbar.jquery.min.js?1614841345"></script>
-    <script src="/potter-docs/js/jquery.sticky.js?1614841345"></script>
-    <script src="/potter-docs/js/featherlight.min.js?1614841345"></script>
-    <script src="/potter-docs/js/html5shiv-printshiv.min.js?1614841345"></script>
-    <script src="/potter-docs/js/modernizr.custom.71422.js?1614841345"></script>
+    <script src="/potter-docs/js/perfect-scrollbar.min.js?1614842340"></script>
+    <script src="/potter-docs/js/perfect-scrollbar.jquery.min.js?1614842340"></script>
+    <script src="/potter-docs/js/jquery.sticky.js?1614842340"></script>
+    <script src="/potter-docs/js/featherlight.min.js?1614842340"></script>
+    <script src="/potter-docs/js/html5shiv-printshiv.min.js?1614842340"></script>
+    <script src="/potter-docs/js/modernizr.custom.71422.js?1614842340"></script>
 
-    <link href="/potter-docs/mermaid/mermaid.css?1614841345" type="text/css" rel="stylesheet" />
-    <script src="/potter-docs/mermaid/mermaid.js?1614841345"></script>
-    <script src="/potter-docs/js/code-snippets.js?1614841345"></script>
+    <link href="/potter-docs/mermaid/mermaid.css?1614842340" type="text/css" rel="stylesheet" />
+    <script src="/potter-docs/mermaid/mermaid.js?1614842340"></script>
+    <script src="/potter-docs/js/code-snippets.js?1614842340"></script>
     <script>
       mermaid.initialize({ startOnLoad: true, htmlLables: true });
       function createIssue(issueUrl, page, url) {
