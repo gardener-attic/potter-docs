@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fetching Resources From a private GitHub Repository on Potter</title>
+    <link>https://gardener.github.io/potter-docs/controller-docs-0.54.0/docs/special-topics/fetching-resources-from-private-github-repo/</link>
+    <description>Recent content in Fetching Resources From a private GitHub Repository on Potter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="https://gardener.github.io/potter-docs/controller-docs-0.54.0/docs/special-topics/fetching-resources-from-private-github-repo/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
