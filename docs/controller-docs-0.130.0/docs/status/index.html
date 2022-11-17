@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+
+  <head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Project Potter Website"><meta name="copyright" content="Copyright 2021 Potter project authors.">
+  
+  <title>Cluster-BoM Status Section explained :: Potter</title>
+  <link rel="icon" type="image/x-icon" href='https://gardener.github.io/potter-docs/images/favicon.ico'>
+  <link rel="icon" type="image/png"    href='https://gardener.github.io/potter-docs/images/favicon-32x32.png' sizes="32x32">
+  <link rel="icon" type="image/png"    href='https://gardener.github.io/potter-docs/images/favicon-16x16.png' sizes="16x16">
+  
+  
+    
+  
+
+  
+  <link href="/potter-docs/css/nucleus.css?1668701295" rel="stylesheet">
+  <link href="/potter-docs/css/font-awesome.min.css?1668701295" rel="stylesheet">
+  <link href="/potter-docs/css/hybrid.css?1668701295" rel="stylesheet">
+  <link href="/potter-docs/css/featherlight.min.css?1668701295" rel="stylesheet">
+  <link href="/potter-docs/css/perfect-scrollbar.min.css?1668701295" rel="stylesheet">
+  <link href="/potter-docs/css/auto-complete.css?1668701295" rel="stylesheet">
+  <link href="/potter-docs/css/skeleton.css?1668701295" rel="stylesheet">
+  <link href="/potter-docs/css/sheetslider.css?1668701295" rel="stylesheet">
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/potter-docs/css/gardener.7593938070d708e7b1bec0e9172492ff8f780d7c20e680f994075d57795a3335.css">
+  
+  <script src="/potter-docs/js/moment.js?1668701295"></script>
+  <script src="/potter-docs/js/vivus.js?1668701295"></script>
+  <script src="/potter-docs/js/scrollreveal.js?1668701295"></script>
+  <script src="/potter-docs/js/inlineSVG.js?1668701295"></script>
+  <script src="/potter-docs/js/jquery.min.js?1668701295"></script>
+  <script src="/potter-docs/js/fixed.js?1668701295"></script>
+  <script src="/potter-docs/js/clipboard.min.js?1668701295"></script>
+
+  <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+  
+
+</head>
+
+
+  <body data-url="/potter-docs/controller-docs-0.130.0/docs/status/" class="has-sticky-navigation">
+      
+    <script>
+  $(document).ready(function () {
+    function initStickyNav() {
+      var stickyPoint;
+      var tln = document.querySelector(".tln");
+      if (!tln) {
+        return;
+      }
+      var stickyPointEl = document.querySelector(".sticky-nav-point");
+      if (stickyPointEl == null) {
+        stickyPointEl = document.querySelector("body");
+        stickyPoint = 0;
+      } else {
+        stickyPoint = stickyPointEl.clientHeight + stickyPointEl.offsetTop;
+      }
+      var bodySelector = document.getElementsByTagName("body")[0];
+      var tlnHeight = tln.clientHeight;
+      var stickyNavigation = function () {
+        if (window.pageYOffset + tlnHeight >= stickyPoint) {
+          bodySelector.classList.add("has-sticky-navigation");
+          tln.classList.add("sticky-top");
+        } else {
+          bodySelector.classList.remove("has-sticky-navigation");
+          tln.classList.remove("sticky-top");
+        }
+      }
+
+      window.onscroll = function () {
+        stickyNavigation();
+      };
+    }
+    initStickyNav();
+
+    function closeAllSelect() {
+      document.getElementById("docOptions").classList.remove("show");
+    }
+
+    function show(e) {
+      e.stopPropagation();
+      document.getElementById("docOptions").classList.add("show");
+    }
+
+    document.addEventListener("click", closeAllSelect);
+    document.getElementById("docSelector").addEventListener("click", show);
+  });
+
+</script>
+
+<div class="tln fixedsticky sticky-top"><header class="navigation">
+    <div class="container">
+      <div class="navigation-wrapper">
+        <a href="/potter-docs/" class="logo">
+          <img src="/potter-docs/images/logo.png" />
+          <span class="title">Potter</span>
+        </a>
+        <a class="nav-button navbar-toggler" href="#"><i class="fa fa-bars"></i></a>
+        
+        <div class="navbar-collapse">
+          <ul class="links">
+            
+            
+            
+            
+            
+            <li class="link has-child">
+              <a href="/potter-docs/hub-docs/home">Hub Docs</a>
+            </li>
+            
+            
+            
+            <li class="link has-child active">
+
+
+
+
+
+
+
+
+
+<a id="docSelector">Controller Docs 0.130.0</a>
+<div id="docOptions" class="doc-options">
+    <ul><li>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://gardener.github.io/potter-docs///controller-docs/home">Controller Docs
+                0.131.0
+            </a>
+            
+        </li><li>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://gardener.github.io/potter-docs///controller-docs-0.130.0/home" class="activeVersion">Controller Docs
+                0.130.0
+            </a>
+            
+        </li><li>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://gardener.github.io/potter-docs///controller-docs-0.129.0/home">Controller Docs
+                0.129.0
+            </a>
+            
+        </li></ul>
+</div>
+              
+            </li>
+            
+            <li class="link ">
+              <a href="/potter-docs/contribute/">Contribute</a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+<script>
+  
+  $(".navigation .navbar-toggler").click(function (evt) {
+    $(".navigation .navbar-collapse").toggle();
+    $(".navigation").toggleClass("collapsed");
+    $(".navigation .search-box").toggle();
+  })
+</script>
+
+
+
+
+
+<style>
+  #docSelector {
+    cursor: pointer;
+  }
+
+  .doc-options {
+    position: fixed;
+    background-color: #0b8062;
+    text-align: left;
+    display: none;
+  }
+
+  .doc-options ul li {
+    margin-bottom: 0;
+  }
+
+  .doc-options ul li a:hover {
+    background-color: #0c694f;
+  }
+
+  .doc-options ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+  }
+
+  .doc-options ul li a {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .doc-options .activeVersion {
+    background-color: #ec682a;
+  }
+
+  .show {
+    display: block;
+  }
+</style>
+    
+    
+  
+<div class="sln">
+    <div class="overlay-band">
+        <ul class="nav-list container">
+            
+            
+            <li title="Home"><a class="navbar-link" href="/potter-docs/controller-docs-0.130.0/home/">Home</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li title="Docs"><a class="navbar-link is-active" href="/potter-docs/controller-docs-0.130.0/docs/">Docs</a>
+            </li>
+            
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+    
+    <div class="main container">
+      
+  <nav id="sidebar" class="collapsed container menu">
+
+    <div class="highlightable">
+        <ul class="topics"><li data-nav-id="/potter-docs/controller-docs-0.130.0/docs/" title="Docs" class="dd-item parent root  collapsible" data-depth="0">
+        <a href="/potter-docs/controller-docs-0.130.0/docs/"><span class="menu-item-text">Docs</span>
+        </a><ul><li data-nav-id="/potter-docs/controller-docs-0.130.0/docs/helm-example/" title="Cluster-BoM Example with Helm Applications" class="dd-item top-level" data-depth="1">
+        <a href="/potter-docs/controller-docs-0.130.0/docs/helm-example/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Example with Helm Applications</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs-0.130.0/docs/kapp-example/" title="Cluster-BoM Example with kapp Applications" class="dd-item top-level" data-depth="1">
+        <a href="/potter-docs/controller-docs-0.130.0/docs/kapp-example/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Example with kapp Applications</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs-0.130.0/docs/plain-yaml-example/" title="Cluster-BoM Example with plain yaml K8s resources" class="dd-item top-level" data-depth="1">
+        <a href="/potter-docs/controller-docs-0.130.0/docs/plain-yaml-example/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Example with plain yaml K8s resources</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs-0.130.0/docs/status/" title="Cluster-BoM Status Section explained" class="dd-item parent active top-level" data-depth="1">
+        <a href="/potter-docs/controller-docs-0.130.0/docs/status/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Status Section explained</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs-0.130.0/docs/template/" title="Cluster-BoM Template" class="dd-item top-level" data-depth="1">
+        <a href="/potter-docs/controller-docs-0.130.0/docs/template/"><span class="toggle"></span><span class="menu-item-text">Cluster-BoM Template</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs-0.130.0/docs/special-topics/" title="Special Topics" class="dd-item top-level collapsible collapsed" data-depth="1">
+        <a href="/potter-docs/controller-docs-0.130.0/docs/special-topics/"><span class="toggle fa fa-angle-right"></span><span class="menu-item-text">Special Topics</span>
+        </a><ul><li data-nav-id="/potter-docs/controller-docs-0.130.0/docs/special-topics/fetching-resources-from-private-github-repo/" title="Fetching Resources From a private GitHub Repository" class="dd-item" data-depth="2">
+        <a href="/potter-docs/controller-docs-0.130.0/docs/special-topics/fetching-resources-from-private-github-repo/"><span class="toggle"></span><span class="menu-item-text">Fetching Resources From a private GitHub Repository</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs-0.130.0/docs/special-topics/gitops/" title="GitOps" class="dd-item" data-depth="2">
+        <a href="/potter-docs/controller-docs-0.130.0/docs/special-topics/gitops/"><span class="toggle"></span><span class="menu-item-text">GitOps</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs-0.130.0/docs/special-topics/manual-reconcile/" title="Manual Reconcile" class="dd-item" data-depth="2">
+        <a href="/potter-docs/controller-docs-0.130.0/docs/special-topics/manual-reconcile/"><span class="toggle"></span><span class="menu-item-text">Manual Reconcile</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs-0.130.0/docs/special-topics/named-secrets/" title="Named Secrets" class="dd-item" data-depth="2">
+        <a href="/potter-docs/controller-docs-0.130.0/docs/special-topics/named-secrets/"><span class="toggle"></span><span class="menu-item-text">Named Secrets</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs-0.130.0/docs/special-topics/resource-ready-requirements/" title="Ready Requirements" class="dd-item" data-depth="2">
+        <a href="/potter-docs/controller-docs-0.130.0/docs/special-topics/resource-ready-requirements/"><span class="toggle"></span><span class="menu-item-text">Ready Requirements</span>
+        </a></li><li data-nav-id="/potter-docs/controller-docs-0.130.0/docs/special-topics/secret-handling/" title="Secret Handling" class="dd-item" data-depth="2">
+        <a href="/potter-docs/controller-docs-0.130.0/docs/special-topics/secret-handling/"><span class="toggle"></span><span class="menu-item-text">Secret Handling</span>
+        </a></li></ul></li></ul></li></ul>
+    </div>
+</nav>
+<a href="#" class="menu-toggler"><i class="fa fa-angle-double-left"></i></a>
+
+<script>
+    $(document).ready(function(){
+        $("#sidebar .dd-item:not(.top-level):not(.parent)").hide();
+        $("#sidebar .dd-item.parent").siblings(".dd-item").show();
+        $('.dd-item', "#sidebar .dd-item.parent").show();
+
+        
+        $(".menu-toggler").click(function(evt){
+            $("#sidebar").toggleClass("collapsed");
+            $(".menu-toggler span").toggleClass("fa-angle-double-left");
+            $(".menu-toggler span").toggleClass("fa-angle-double-right");
+        });
+    })
+</script>
+
+      <section>
+        
+        <div class="highlightable body-inner-wrapper">
+          
+          
+          <div id="body-inner" class="">
+            
+<div class="docs page"><h1>Cluster-BoM Status Section explained</h1>
+  <div class="properties">
+      
+  </div>
+  
+    
+
+	<ul>
+<li><a href="#status-section-overview">Status Section Overview</a></li>
+<li><a href="#cluster-bom-status-section-example">Cluster-BoM Status Section Example</a></li>
+<li><a href="#conditions">Conditions</a></li>
+<li><a href="#deployment-state-of-each-application">Deployment State of each application</a></li>
+<li><a href="#overall-deployment-state">Overall Deployment State</a></li>
+</ul>
+<h4 id="status-section-overview">Status Section Overview</h4>
+<p>To check the deployment status, use <code>kubectl get clusterbom [NAME-OF-YOUR-CLUSTERBOM] -o yaml</code>. Kubernetes returns the current metadata of the BoM resource. This metadata includes information about the last applied configuration, your <code>applicationConfigs</code>, and a <code>status</code> section at the end.<br></p>
+<p>The status section consists of:</p>
+<ul>
+<li>
+<p>the <code>conditions</code> describing if all configured apps are up and running in their last revision and if all removed applications have been deleted from the target cluster. This is the most important part in the status for the end user. Other parts of the status are more for detailed problem analysis.</p>
+</li>
+<li>
+<p>the <code>applicationStates</code> with a list of <code>detailedState</code> items containing a detailed description of the deployment and running state for every application specified by the Cluster-BoM. It reflects what currently is deployed on the target cluster in comparison to what is specified in the Cluster-BoM. This might also include detailed states of applications which are already removed from the Cluster-BoM but not already removed from the target cluster.</p>
+</li>
+<li>
+<p>the <code>overallState</code> that is an aggregated state of all application states.</p>
+</li>
+</ul>
+<p>Execute <code>kubectl get clusterbom [NAME-OF-YOUR-CLUSTERBOM] -o yaml</code> several times to see the changes of your deployment status.</p>
+<blockquote>
+<p>The explanatory comments are not part of the output.</p>
+</blockquote>
+<h4 id="cluster-bom-status-section-example">Cluster-BoM Status Section Example</h4>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">status</span><span class="p">:</span><span class="w">
+</span><span class="w">
+</span><span class="w">  </span><span class="nt">conditions</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">lastTransitionTime</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2020-04-07T08:38:57Z&#34;</span><span class="w">
+</span><span class="w">    </span><span class="nt">lastUpdateTime</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2020-04-08T06:03:50Z&#34;</span><span class="w">
+</span><span class="w">    </span><span class="nt">message: &#39;Pending applications</span><span class="p">:</span><span class="w"> </span><span class="l">mongodb, servicecatalog. &#39;</span><span class="w">
+</span><span class="w">    </span><span class="nt">reason</span><span class="p">:</span><span class="w"> </span><span class="l">PendingApps</span><span class="w">
+</span><span class="w">    </span><span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="l">Unknown</span><span class="w">
+</span><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">Ready</span><span class="w">
+</span><span class="w">
+</span><span class="w">  </span><span class="nt">applicationStates</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">detailedState</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">deletionTimestamp</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2020-03-13T09:11:28Z&#34;</span><span class="w"> </span><span class="c"># indicator that this app is marked for deletion</span><span class="w">
+</span><span class="w">      </span><span class="nt">generation</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">      </span><span class="nt">lastOperation</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">install successful</span><span class="w">
+</span><span class="w">        </span><span class="nt">observedGeneration</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">        </span><span class="nt">successGeneration</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">        </span><span class="nt">numberOfTries</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">        </span><span class="nt">operation</span><span class="p">:</span><span class="w"> </span><span class="l">install</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">ok                    </span><span class="w"> </span><span class="c"># state of last install/remove</span><span class="w">
+</span><span class="w">        </span><span class="nt">time</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2020-03-13T09:11:22Z&#34;</span><span class="w">
+</span><span class="w">      </span><span class="nt">reachability</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">reachable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">        </span><span class="nt">time</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2020-03-13T09:11:22Z&#34;</span><span class="w">
+</span><span class="w">      </span><span class="nt">readiness</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">ok</span><span class="w">
+</span><span class="w">        </span><span class="nt">time</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2020-03-13T09:11:23Z&#34;</span><span class="w">
+</span><span class="w">    </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">karydia</span><span class="w">
+</span><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">ok                        </span><span class="w"> </span><span class="c"># application state</span><span class="w">
+</span><span class="w">  </span>- <span class="nt">detailedState</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="nt">generation</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">      </span><span class="nt">lastOperation</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">install successful</span><span class="w">
+</span><span class="w">        </span><span class="nt">observedGeneration</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">        </span><span class="nt">successGeneration</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">        </span><span class="nt">numberOfTries</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">        </span><span class="nt">operation</span><span class="p">:</span><span class="w"> </span><span class="l">install</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">ok                    </span><span class="w"> </span><span class="c"># state of last install/remove</span><span class="w">
+</span><span class="w">        </span><span class="nt">time</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2020-03-13T09:11:23Z&#34;</span><span class="w">
+</span><span class="w">      </span><span class="nt">reachability</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">reachable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">        </span><span class="nt">time</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2020-03-13T09:11:23Z&#34;</span><span class="w">
+</span><span class="w">      </span><span class="nt">readiness</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">pending</span><span class="w">
+</span><span class="w">        </span><span class="nt">time</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2020-03-13T09:11:23Z&#34;</span><span class="w">
+</span><span class="w">    </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">mongodb</span><span class="w">
+</span><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">ok                        </span><span class="w"> </span><span class="c"># application state </span><span class="w">
+</span><span class="w">  </span><span class="nt">overallState</span><span class="p">:</span><span class="w"> </span><span class="l">pending              </span><span class="w"> </span><span class="c"># overall state</span><span class="w">
+</span><span class="w">  </span><span class="nt">overallTime</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2020-04-08T06:03:50Z&#34;</span><span class="w"> </span><span class="c"># last update time of overall state</span><span class="w">
+</span></code></pre></div><h4 id="conditions">Conditions</h4>
+<p>The condition of type <code>Ready</code> describes if all configured apps are up and running in their last revision.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Section Field</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>type</code></td>
+<td style="text-align:left"><code>Ready</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>status</code></td>
+<td style="text-align:left"><code>True</code>: All configured apps are up and running in their last revision, the specified jobs in the <code>readyRequirements</code> sections are finished successfully and all removed applications have been deleted from the target cluster <br><code>False</code>: Some application has failed without any chance to recover. <br><code>Unknown</code>: Otherwise.</td>
+</tr>
+</tbody>
+</table>
+<p>Every Cluster-BoM contains a <code>generation</code> field in its <code>metadata</code> section which is automatically increased by the Kubernetes environment when a modification is done. In this sense it describes the revision of the complete <code>spec</code> section of the Cluster-BoM.</p>
+<p>In the <code>status</code> section there is a field <code>observedGeneration</code> which describes the revision or <code>generation</code> to which the condition refers. Only if the <code>observedGeneration</code> and the <code>generation</code> contain identical numbers, the condition describes the status of the current Cluster-BoM and not of a former state/revision.</p>
+<p>The main advantage of the <code>Ready</code> condition compared to the overall deployment state is that it is computed with respect to a particular revision of a Cluster-BoM. The overall deployment state is computed based on an internal snapshot of what is currently deployed and what was internally seen as the last revision of particular applications.</p>
+<p>The condition of type <code>ClusterReachable</code> describes if the target cluster is reachable.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Section Field</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>type</code></td>
+<td style="text-align:left"><code>ClusterReachable</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>status</code></td>
+<td style="text-align:left"><code>True</code>: Target Shoot Cluster is reachable. <br><code>False</code>: Target Shoot Cluster is not reachable. <br><code>Unknown</code>: No information available.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="deployment-state-of-each-application">Deployment State of Each Application</h4>
+<p>The <code>detailedState</code> of an application consists of:</p>
+<ul>
+<li>
+<p><code>generation</code>: Revision number for the application and its settings (for example, version, values), that <strong>should be</strong> deployed on the target shoot cluster. This number is automatically increased every time a user make changes to the application configuration. There might be a small delay until changes in the Cluster-BoM are reflected in changes of the <code>generation</code> of the affected application configurations.</p>
+</li>
+<li>
+<p><code>deletionTimestamp</code>: If this entry is set, the corresponding application is marked for deletion and will be removed after the application was uninstalled from the target cluster.</p>
+</li>
+<li>
+<p><code>lastOperation</code>:<br> Describes the status of the last applied installation or removal operation with respect to the application config in the Cluster-BoM.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Section Field</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>operation</code></td>
+<td style="text-align:left">Operation that was triggered in this revision, for example, <code>install</code> or <code>remove</code>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>observedGeneration</code></td>
+<td style="text-align:left">Revision number (<code>generation</code>) for the application and its settings (for example, version, values), that <strong>was</strong> installed or removed on the target shoot cluster. A lower number compared to <code>generation</code> signals that no the latest setting where applied until now.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>numberOfTries</code></td>
+<td style="text-align:left">The Application Hub doesn’t stop to try the deployment or removal if there are issues, but waits longer after each attempt before trying it again.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>state</code></td>
+<td style="text-align:left"><code>ok</code>: the last try of the operation succeeded.<br><code>failed</code>: The last try of the operation <strong>didn&rsquo;t</strong> succeed.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>successGeneration</code></td>
+<td style="text-align:left">The last revision number (<code>generation</code>) for which the operation succeeded. Due to an internal reconcile loop which re-executes the last operation from time to time, the <code>state</code> only informs about the success or failure of this. With the <code>successGeneration</code> you see which was the last successfully applied revision.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>description</code></td>
+<td style="text-align:left">More details about the operation result.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>time</code></td>
+<td style="text-align:left">Timestamp describing when the revision was applied.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>errorHistory</code></td>
+<td style="text-align:left">The first and up to the 4 last errors with respect to the last applied revision.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><code>reachability</code>:<br> Describes the availability of the target cluster. Operations aren&rsquo;t executed if the target cluster isn’t reachable, for example, if it’s hibernated. In such a case also section like <code>lastOperation</code> are not updated.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Section Field</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>reachable</code></td>
+<td style="text-align:left"><code>true</code>: The cluster could be reached.<br><code>false</code>: The cluster <em>couldn&rsquo;t</em> be reached.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>time</code></td>
+<td style="text-align:left">Time of the last check. Not reachable clusters are rechecked every couple of minutes.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><code>readiness</code>:<br> The <code>lastOperation</code> section describes the state with respect to the deployment and removal of k8s resources of the application. The <code>readiness</code> instead describes if the most important components of the installed applications are up and running. Currently all Deployments, DaemonSets and StatefulSets are checked for this. Furthermore the specified jobs of the <code>readyRequirements</code> section must be finished successfully.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Section Field</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>state</code></td>
+<td style="text-align:left"><code>ok</code>: For the last deployed revision all relevant k8s components are up and running and all specified jobs of the <code>readyRequirements</code> section must be finished successfully. <br><code>pending</code>: For the last deployed revision not all relevant k8s components are already up and running. <br><code>failed</code>: The last deployment failed.<br><code>finallyFailed</code>: One of the jobs specified in the <code>readyRequirements</code> section failed.  <br><code>notRelevant</code>: For removal operations. <br><code>unknown</code>: If something failed when finding out the readiness state, e.g. access to the target cluster timed out.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>time</code></td>
+<td style="text-align:left">Time of the last check. Not reachable clusters are rechecked every couple of minutes.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><code>detailedState.state</code>: Overall state for one application computed as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Current Operation</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">remove</td>
+<td style="text-align:left"><strong>ok</strong>: The application was successfully uninstalled from the target cluster, i.e. <code>lastOperation.operation</code> is <code>remove</code> and <code>lastOperation.state</code> is <code>ok</code>.<br><strong>pending</strong>: The uninstall operation was not executed until now, i.e. <code>lastOperation.operation</code> is not <code>remove</code>. <br><strong>failed</strong>: The uninstall operation failed but will be retried, i.e. <code>lastOperation.operation</code> is <code>remove</code> and <code>lastOperation.state</code> is not <code>ok</code>.</td>
+</tr>
+<tr>
+<td style="text-align:left">install</td>
+<td style="text-align:left"><strong>ok</strong>: The last application which was tried to install, was successfully installed on the target cluster and is ready. The last tried application might not be the latest specified in the Cluster-BoM. <br><strong>pending</strong>: The last tried application was successfully installed but is not already up and running or there is newer revision of the application to be deployed. <br><strong>failed</strong>: The installation of the last revision of the application failed or some components of the applications failed to succeed.<br><strong>unknown</strong>: Something failed when finding out the state, e.g. access to the target cluster timed out.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><code>typeSpecificStatus</code>: Here you find additional status information depending on the config type (e.g. helm or kapp). Currently this is only used for kapp. More detailed information about the information provided here could be found <a href="https://github.com/k14s/kapp-controller/blob/develop/docs/app-spec.md">here</a>.</p>
+</li>
+</ul>
+<h4 id="overall-deployment-state">Overall Deployment State</h4>
+<p>Beside the detailed state, <code>status.overallState</code> provides an aggregated state of the application states (of <code>detailedState.state</code>) as the following table exemplifies:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Single States:</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">application state 1</td>
+<td style="text-align:left">ok</td>
+<td style="text-align:left">ok</td>
+<td style="text-align:left">ok</td>
+<td style="text-align:left">ok</td>
+</tr>
+<tr>
+<td style="text-align:left">application state 2</td>
+<td style="text-align:left">ok</td>
+<td style="text-align:left">ok</td>
+<td style="text-align:left">ok</td>
+<td style="text-align:left">failed</td>
+</tr>
+<tr>
+<td style="text-align:left">application state 3</td>
+<td style="text-align:left">ok</td>
+<td style="text-align:left">ok</td>
+<td style="text-align:left">unknown</td>
+<td style="text-align:left">unknown</td>
+</tr>
+<tr>
+<td style="text-align:left">application state 4</td>
+<td style="text-align:left">ok</td>
+<td style="text-align:left">pending</td>
+<td style="text-align:left">pending</td>
+<td style="text-align:left">pending</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Calculated Overall State:</strong></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>status.overallState</code></td>
+<td style="text-align:left">ok</td>
+<td style="text-align:left">pending</td>
+<td style="text-align:left">unknown</td>
+<td style="text-align:left">failed</td>
+</tr>
+</tbody>
+</table>
+<p>Besides this you find summarized information about the installation progress:</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">overallNumOfDeployments</span><span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">        </span><span class="c"># number of configured applications</span><span class="w">
+</span><span class="w"></span><span class="nt">overallNumOfReadyDeployments</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">   </span><span class="c"># number of successfully installed applications</span><span class="w">
+</span><span class="w"></span><span class="nt">overallProgress</span><span class="p">:</span><span class="w"> </span><span class="m">75</span><span class="w">               </span><span class="c"># percentage of successfully installed applications</span><span class="w">
+</span></code></pre></div>
+	
+</div>
+            
+          </div>
+        </div>
+        
+  
+              <div class="howto_tickets">
+                
+                
+                
+                
+                <a href="https://github.com/gardener/potter-hub/issues/new/choose" target="_blank">
+                    <span>Let us know how can we improve.</span>
+                    <span>Open <img src="https://gardener.github.io/potter-docs/images/branding/github-mark-logo-green.svg"/> GitHub Issue <i class="fa fa-external-link" aria-hidden="true"></i></span>
+                </a>
+            </div>
+  
+
+      </section>
+      
+    </div><style>
+ 
+</style>
+<footer class="footer">
+  <div class="container footer-wrapper">
+    <img src="/potter-docs/images/lp/logo.png" alt="Logo Gardener" class="logo"/>
+    <ul class="media-wr">       
+      <li>
+        <a target="_blank" href="https://github.com/gardener/potter-hub">
+          <img src="/potter-docs/images/branding/github-mark-logo.png" class="media-icon" />
+          <div class="media-text">GitHub</div>
+        </a>
+      </li>                   
+    </ul>
+    <span class="copyright">Copyright 2021 Potter project authors. Privacy Statement</span>
+  </div>
+</footer>
+    
+    <script src="/potter-docs/js/perfect-scrollbar.min.js?1668701295"></script>
+    <script src="/potter-docs/js/perfect-scrollbar.jquery.min.js?1668701295"></script>
+    <script src="/potter-docs/js/jquery.sticky.js?1668701295"></script>
+    <script src="/potter-docs/js/featherlight.min.js?1668701295"></script>
+    <script src="/potter-docs/js/html5shiv-printshiv.min.js?1668701295"></script>
+    <script src="/potter-docs/js/modernizr.custom.71422.js?1668701295"></script>
+
+    <link href="/potter-docs/mermaid/mermaid.css?1668701295" type="text/css" rel="stylesheet" />
+    <script src="/potter-docs/mermaid/mermaid.js?1668701295"></script>
+    <script src="/potter-docs/js/code-snippets.js?1668701295"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true, htmlLables: true });
+      function createIssue(issueUrl, page, url) {
+          var uri = issueUrl+"?title=Documentation issue on page \""+page+"\"";
+          uri = uri+ "&body=\n\n<- DESCRIBE MISSING OR FAULTY DOCUMENTATION HERE->\n\n---\nPage: ["+ page +"]("+
+          url+ ")\ndon't remove the link to the page. It's required for the processor"
+          var res = encodeURI(uri);
+          res +="&labels=area/documentation"
+          window.open(res,"issue")
+          return false;
+      }
+
+      $(document).ready(function() {
+
+
+        inlineSVG.init();
+
+        $("[data-publishdate]").each(function(){
+          $(this).text(moment($(this, "YYYY-MM-DD", "YYYY-MM-DD hh:mm:ss").attr("data-publishdate")).fromNow());
+        });
+          
+        new ClipboardJS('.clipboard-copy');
+
+        $("body").codeSnippets();
+      });
+    </script>
+
+    
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    
+  </body>
+</html>
