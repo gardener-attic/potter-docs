@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Secret Handling on Potter</title>
+    <link>https://gardener.github.io/potter-docs/controller-docs-0.136.0/docs/special-topics/secret-handling/</link>
+    <description>Recent content in Secret Handling on Potter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="https://gardener.github.io/potter-docs/controller-docs-0.136.0/docs/special-topics/secret-handling/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
