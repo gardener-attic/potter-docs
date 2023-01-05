@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+
+  <head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Project Potter Website"><meta name="copyright" content="Copyright 2021 Potter project authors.">
+  
+  <title>Docs :: Potter</title>
+  <link rel="icon" type="image/x-icon" href='https://gardener.github.io/potter-docs/images/favicon.ico'>
+  <link rel="icon" type="image/png"    href='https://gardener.github.io/potter-docs/images/favicon-32x32.png' sizes="32x32">
+  <link rel="icon" type="image/png"    href='https://gardener.github.io/potter-docs/images/favicon-16x16.png' sizes="16x16">
+  
+  
+    
+  
+
+  
+  <link href="/potter-docs/css/nucleus.css?1672910399" rel="stylesheet">
+  <link href="/potter-docs/css/font-awesome.min.css?1672910399" rel="stylesheet">
+  <link href="/potter-docs/css/hybrid.css?1672910399" rel="stylesheet">
+  <link href="/potter-docs/css/featherlight.min.css?1672910399" rel="stylesheet">
+  <link href="/potter-docs/css/perfect-scrollbar.min.css?1672910399" rel="stylesheet">
+  <link href="/potter-docs/css/auto-complete.css?1672910399" rel="stylesheet">
+  <link href="/potter-docs/css/skeleton.css?1672910399" rel="stylesheet">
+  <link href="/potter-docs/css/sheetslider.css?1672910399" rel="stylesheet">
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/potter-docs/css/gardener.7593938070d708e7b1bec0e9172492ff8f780d7c20e680f994075d57795a3335.css">
+  
+  <script src="/potter-docs/js/moment.js?1672910399"></script>
+  <script src="/potter-docs/js/vivus.js?1672910399"></script>
+  <script src="/potter-docs/js/scrollreveal.js?1672910399"></script>
+  <script src="/potter-docs/js/inlineSVG.js?1672910399"></script>
+  <script src="/potter-docs/js/jquery.min.js?1672910399"></script>
+  <script src="/potter-docs/js/fixed.js?1672910399"></script>
+  <script src="/potter-docs/js/clipboard.min.js?1672910399"></script>
+
+  <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+  
+
+</head>
+
+
+  <body data-url="/potter-docs/hub-docs-0.150.0/docs/" class="has-sticky-navigation">
+      
+    <script>
+  $(document).ready(function () {
+    function initStickyNav() {
+      var stickyPoint;
+      var tln = document.querySelector(".tln");
+      if (!tln) {
+        return;
+      }
+      var stickyPointEl = document.querySelector(".sticky-nav-point");
+      if (stickyPointEl == null) {
+        stickyPointEl = document.querySelector("body");
+        stickyPoint = 0;
+      } else {
+        stickyPoint = stickyPointEl.clientHeight + stickyPointEl.offsetTop;
+      }
+      var bodySelector = document.getElementsByTagName("body")[0];
+      var tlnHeight = tln.clientHeight;
+      var stickyNavigation = function () {
+        if (window.pageYOffset + tlnHeight >= stickyPoint) {
+          bodySelector.classList.add("has-sticky-navigation");
+          tln.classList.add("sticky-top");
+        } else {
+          bodySelector.classList.remove("has-sticky-navigation");
+          tln.classList.remove("sticky-top");
+        }
+      }
+
+      window.onscroll = function () {
+        stickyNavigation();
+      };
+    }
+    initStickyNav();
+
+    function closeAllSelect() {
+      document.getElementById("docOptions").classList.remove("show");
+    }
+
+    function show(e) {
+      e.stopPropagation();
+      document.getElementById("docOptions").classList.add("show");
+    }
+
+    document.addEventListener("click", closeAllSelect);
+    document.getElementById("docSelector").addEventListener("click", show);
+  });
+
+</script>
+
+<div class="tln fixedsticky sticky-top"><header class="navigation">
+    <div class="container">
+      <div class="navigation-wrapper">
+        <a href="/potter-docs/" class="logo">
+          <img src="/potter-docs/images/logo.png" />
+          <span class="title">Potter</span>
+        </a>
+        <a class="nav-button navbar-toggler" href="#"><i class="fa fa-bars"></i></a>
+        
+        <div class="navbar-collapse">
+          <ul class="links">
+            
+            
+            
+            <li class="link has-child active">
+
+
+
+
+
+
+
+
+
+<a id="docSelector">Hub Docs 0.150.0</a>
+<div id="docOptions" class="doc-options">
+    <ul><li>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://gardener.github.io/potter-docs///hub-docs/home">Hub Docs
+                0.151.0
+            </a>
+            
+        </li><li>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://gardener.github.io/potter-docs///hub-docs-0.150.0/home" class="activeVersion">Hub Docs
+                0.150.0
+            </a>
+            
+        </li><li>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://gardener.github.io/potter-docs///hub-docs-0.149.0/home">Hub Docs
+                0.149.0
+            </a>
+            
+        </li></ul>
+</div>
+              
+            </li>
+            
+            
+            
+            
+            
+            
+            <li class="link has-child">
+              <a href="/potter-docs/controller-docs/home">Controller Docs</a>
+            </li>
+            <li class="link ">
+              <a href="/potter-docs/contribute/">Contribute</a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+<script>
+  
+  $(".navigation .navbar-toggler").click(function (evt) {
+    $(".navigation .navbar-collapse").toggle();
+    $(".navigation").toggleClass("collapsed");
+    $(".navigation .search-box").toggle();
+  })
+</script>
+
+
+
+
+
+<style>
+  #docSelector {
+    cursor: pointer;
+  }
+
+  .doc-options {
+    position: fixed;
+    background-color: #0b8062;
+    text-align: left;
+    display: none;
+  }
+
+  .doc-options ul li {
+    margin-bottom: 0;
+  }
+
+  .doc-options ul li a:hover {
+    background-color: #0c694f;
+  }
+
+  .doc-options ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+  }
+
+  .doc-options ul li a {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .doc-options .activeVersion {
+    background-color: #ec682a;
+  }
+
+  .show {
+    display: block;
+  }
+</style>
+    
+    
+  
+<div class="sln">
+    <div class="overlay-band">
+        <ul class="nav-list container">
+            
+            
+            
+            
+            
+            <li title="Home"><a class="navbar-link" href="/potter-docs/hub-docs-0.150.0/home/">Home</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li title="Docs"><a class="navbar-link is-active" href="/potter-docs/hub-docs-0.150.0/docs/">Docs</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+    
+    <div class="main container">
+      
+  <nav id="sidebar" class="collapsed container menu">
+
+    <div class="highlightable">
+        <ul class="topics"><li data-nav-id="/potter-docs/hub-docs-0.150.0/docs/" title="Docs" class="dd-item parent active root  collapsible" data-depth="0">
+        <a href="/potter-docs/hub-docs-0.150.0/docs/"><span class="menu-item-text">Docs</span>
+        </a><ul><li data-nav-id="/potter-docs/hub-docs-0.150.0/docs/ui/" title="User Interface" class="dd-item top-level" data-depth="1">
+        <a href="/potter-docs/hub-docs-0.150.0/docs/ui/"><span class="toggle"></span><span class="menu-item-text">User Interface</span>
+        </a></li></ul></li></ul>
+    </div>
+</nav>
+<a href="#" class="menu-toggler"><i class="fa fa-angle-double-left"></i></a>
+
+<script>
+    $(document).ready(function(){
+        $("#sidebar .dd-item:not(.top-level):not(.parent)").hide();
+        $("#sidebar .dd-item.parent").siblings(".dd-item").show();
+        $('.dd-item', "#sidebar .dd-item.parent").show();
+
+        
+        $(".menu-toggler").click(function(evt){
+            $("#sidebar").toggleClass("collapsed");
+            $(".menu-toggler span").toggleClass("fa-angle-double-left");
+            $(".menu-toggler span").toggleClass("fa-angle-double-right");
+        });
+    })
+</script>
+
+      <section>
+        
+        <div class="highlightable body-inner-wrapper">
+          
+          
+          <div id="body-inner" class="">
+            
+<div class="docs page"><h1>Docs</h1>
+  <div class="properties">
+      
+  </div>
+  
+    
+
+	<p>Welcome to the Potter Hub! Here, you can find everything you always wanted to know about the Potter Hub.
+As a first time visitor, you might want to first go through this document to get an overview over the Potter Hub. If
+you are looking for something specific, please see the navigation on the left hand.</p>
+<blockquote>
+<p>For information about Cluster-BoMs, visit the <a href="../../controller-docs/home">Controller Docs</a>.</p>
+</blockquote>
+<h2 id="what-is-the-potter-hub">What Is the Potter Hub?</h2>
+<p>The <em>Potter Hub</em> is a Kubernetes extension to deploy and manage deployments in Kubernetes clusters. It’s a central
+component in a Kubernetes landscape and doesn’t require any additional components running in the target shoot cluster.
+Target groups are primarily teams who want to deploy Kubernetes workload in a Gardener-managed cluster.</p>
+<h2 id="benefits-of-using-the-potter-hub">Benefits of using the Potter Hub</h2>
+<ul>
+<li>Possibility to have <strong>one single YAML file describing the full set of K8s Deployments for a cluster</strong> instead of using
+individual Command Scripts for each K8s Deployment and also managing those deployments individually. Simply create
+a &ldquo;Bill-of-Material&rdquo; containing multiple k8s deployments using different deployment technologies like Helm, kapp or
+plain yaml (<em>planned</em>)</li>
+<li><strong>Establish a declarative approach for K8s deployments</strong> (using Cluster-BoMs) as the standard for K8s Workloads to
+eliminate the need of creating specific deployment scripts to deploy K8s workload to Clusters, which quickly becomes
+unmanageable, especially in private cloud scenarios</li>
+<li><strong>No need to deal with Helm or kapp (as well as other k8s deployment technologies) in detail</strong>. Instead, let the
+Potter Hub be responsible for handling these deployment technology details</li>
+<li><strong>Possibility to retrieve and use one single status</strong> (the Cluster-BoM Status), representing the overall state of
+all deployments in a cluster, instead of trying to compute the overall cluster deployment state on your own</li>
+<li><strong>Dependency-Management between Cluster Deployments</strong> (<em>planned</em>), where for example the sequence of K8s deployments
+can be specified, even between different K8s deployment technologies like Helm, kapp or plain YAML files</li>
+<li><strong>Import/Export Management between deployments</strong> (<em>planned</em>), where specific data created during deployment of
+component A is needed during deployment of Component B</li>
+<li><strong>Cluster-BoMs represent the single source of truth</strong> of what is actually running on a specific cluster, making it
+possible to provide deployment statistics across Gardener Projects (&ldquo;What exactly runs on managed Clusters ?&quot;)</li>
+</ul>
+<h2 id="architecture-overview">Architecture Overview</h2>
+<p><img src="./hub-overview-architecture.png" alt=""></p>
+<h2 id="what-can-be-deployed">What can be deployed?</h2>
+<p>Supported Kubernetes deployments are currently based on <a href="https://helm.sh/">Helm</a> charts and
+<a href="https://github.com/k14s/kapp">kapp</a> applications, but other types will be supported in the future.</p>
+<p>To trigger deployments, two approaches are available:</p>
+<ul>
+<li><a href="./ui/">Manual deployments using the UI</a></li>
+<li>Automated deployments using Cluster-BoMs (see the <a href="../../controller-docs/home">Controller Docs</a>).</li>
+</ul>
+<p>The Helm charts are located in dedicated Helm chart repositories. These repos must be connected to a Potter Hub
+installation according to the installation guide.</p>
+<h3 id="github-repository">Github Repository</h3>
+<p>The github repository of the Potter Hub could be found <a href="https://github.com/gardener/potter-hub">here</a></p>
+
+	
+</div>
+            
+          </div>
+        </div>
+        
+  
+              <div class="howto_tickets">
+                
+                
+                
+                
+                <a href="https://github.com/gardener/potter-hub/issues/new/choose" target="_blank">
+                    <span>Let us know how can we improve.</span>
+                    <span>Open <img src="https://gardener.github.io/potter-docs/images/branding/github-mark-logo-green.svg"/> GitHub Issue <i class="fa fa-external-link" aria-hidden="true"></i></span>
+                </a>
+            </div>
+  
+
+      </section>
+      
+    </div><style>
+ 
+</style>
+<footer class="footer">
+  <div class="container footer-wrapper">
+    <img src="/potter-docs/images/lp/logo.png" alt="Logo Gardener" class="logo"/>
+    <ul class="media-wr">       
+      <li>
+        <a target="_blank" href="https://github.com/gardener/potter-hub">
+          <img src="/potter-docs/images/branding/github-mark-logo.png" class="media-icon" />
+          <div class="media-text">GitHub</div>
+        </a>
+      </li>                   
+    </ul>
+    <span class="copyright">Copyright 2021 Potter project authors. Privacy Statement</span>
+  </div>
+</footer>
+    
+    <script src="/potter-docs/js/perfect-scrollbar.min.js?1672910399"></script>
+    <script src="/potter-docs/js/perfect-scrollbar.jquery.min.js?1672910399"></script>
+    <script src="/potter-docs/js/jquery.sticky.js?1672910399"></script>
+    <script src="/potter-docs/js/featherlight.min.js?1672910399"></script>
+    <script src="/potter-docs/js/html5shiv-printshiv.min.js?1672910399"></script>
+    <script src="/potter-docs/js/modernizr.custom.71422.js?1672910399"></script>
+
+    <link href="/potter-docs/mermaid/mermaid.css?1672910399" type="text/css" rel="stylesheet" />
+    <script src="/potter-docs/mermaid/mermaid.js?1672910399"></script>
+    <script src="/potter-docs/js/code-snippets.js?1672910399"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true, htmlLables: true });
+      function createIssue(issueUrl, page, url) {
+          var uri = issueUrl+"?title=Documentation issue on page \""+page+"\"";
+          uri = uri+ "&body=\n\n<- DESCRIBE MISSING OR FAULTY DOCUMENTATION HERE->\n\n---\nPage: ["+ page +"]("+
+          url+ ")\ndon't remove the link to the page. It's required for the processor"
+          var res = encodeURI(uri);
+          res +="&labels=area/documentation"
+          window.open(res,"issue")
+          return false;
+      }
+
+      $(document).ready(function() {
+
+
+        inlineSVG.init();
+
+        $("[data-publishdate]").each(function(){
+          $(this).text(moment($(this, "YYYY-MM-DD", "YYYY-MM-DD hh:mm:ss").attr("data-publishdate")).fromNow());
+        });
+          
+        new ClipboardJS('.clipboard-copy');
+
+        $("body").codeSnippets();
+      });
+    </script>
+
+    
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    
+  </body>
+</html>
